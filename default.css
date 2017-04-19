@@ -1,0 +1,10 @@
+sub {
+	vertical-align: sub;
+	font-size: 0.75em;
+}
+
+sup {
+	vertical-align: super;
+	font-size: 0.75em;
+}
+

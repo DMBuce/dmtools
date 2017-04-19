@@ -1,0 +1,16 @@
+@import url("reset.css");
+@import url("default.css");
+
+body {
+	text-align: center;
+}
+
+.thing, .spacer {
+	font-weight: bold;
+	font-size: 30pt;
+	font-family: Arial, sans-serif;
+	color: black;
+	padding: 1em;
+	line-height: 1.5em;
+}
+
