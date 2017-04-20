@@ -1,8 +1,26 @@
 @import url("reset.css");
 @import url("default.css");
 
-body {
+body.generator {
 	text-align: center;
+}
+
+.content {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+h2 {
+	font-size: 30pt;
+	text-align: center;
+	padding: 1em;
+}
+
+ul {
+	/*padding-top: 1em;
+	margin-left: 2em;*/
+	list-style: disc;
 }
 
 .thing, .spacer {
