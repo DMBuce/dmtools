@@ -1,11 +1,54 @@
 // unused maze rats tables
-// * omens/magical catasrophes
-// * clothing
-// * after the party
-// * dungeon entrances
-// * dungeon layout
+// * magic: omens/magical catasrophes (pg 3)
+// * characters: all (pg 5, 6)
+// * characters: clothing (pg 6)
+// * characters: after the party (pg 6)
+// * the maze: dungeon entrances (pg 10)
+// * the maze: dungeon layout (pg 10)
 
-var adjectives = [
+var maintable = [
+	//"{{dude}}",
+	"{{thing}}",
+	"{{thing}}",
+	"{{thing}}",
+	"{{thing}}",
+]
+
+// all_adjective = adjective|adjectnoun
+// all_noun = noun|adjectnoun
+// [adjective] all_adjective all_noun [modifier]
+var thing = [
+	"{{all_adjective}} {{all_noun}}",
+	"{{adjective}} {{all_adjective}} {{all_noun}}",
+	"{{all_adjective}} {{all_noun}} {{modifier}}",
+	"{{adjective}} {{all_adjective}} {{all_noun}} {{modifier}}"
+]
+
+var spell = [
+	"{{effect}} {{form}}",
+	"{{element}} {{form}}",
+	"{{effect}} {{element}}",
+]
+
+var effect = [
+	"{{physical_effect}}",
+	"{{ethereal_effect}}",
+]
+
+var element = [
+	"{{physical_element}}",
+	"{{ethereal_element}}",
+]
+
+var form = [
+	"{{physical_form}}",
+	"{{ethereal_form}}",
+]
+
+// ADJECTIVES
+
+var physical_effect = [
+	// magic: physical effects
 	"animating",
 	"attracting",
 	"binding",
@@ -42,6 +85,10 @@ var adjectives = [
 	"spawning",
 	"transmuting",
 	"transporting",
+]
+
+var ethereal_effect = [
+	// magic: ethereal effects
 	"avenging",
 	"banishing",
 	"bewildering",
@@ -68,19 +115,20 @@ var adjectives = [
 	"mindreading",
 	"nullifying",
 	"paralyzing",
-	"summoning",
-	"intoxicating",
 	"revealing",
-	"terrifying",
-	"maddening",
 	"revolting",
-	"warding",
-	"mesmerizing",
 	"scrying",
-	"wearying",
-	"mindreading",
 	"silencing",
+	"soothing",
+	"summoning",
+	"terrifying",
+	"warding",
+	"wearying",
 	"withering",
+]
+
+var monster_trait = [
+	// monsters: monster traits
 	"amphibious",
 	"bloated",
 	"brittle",
@@ -89,6 +137,7 @@ var adjectives = [
 	"colossal",
 	"crystalline",
 	"decaying",
+	//"{{ethereal element}}",
 	"ethereal",
 	"ever-young",
 	"eyeless",
@@ -104,6 +153,7 @@ var adjectives = [
 	"luminous",
 	"many-headed",
 	"mechanical",
+	//"{{physical element}}",
 	"planar",
 	"reflective",
 	"rubbery",
@@ -115,15 +165,20 @@ var adjectives = [
 	"stinking",
 	"tiny",
 	"translucent",
+]
+
+var monster_ability = [
+	// monsters: monster abilities
 	"absorbing",
 	"acid blood",
 	"anti-magic",
 	"blinding",
-	//"{{ethereal element}}-breathing",
+	"{{ethereal_element}}-breathing",
 	"camouflaging",
 	"duplicating",
 	"electric",
 	"entangling",
+	//"{{ethereal effect}}",
 	"exploding",
 	"flying",
 	"gaze weapon",
@@ -136,6 +191,7 @@ var adjectives = [
 	"mind-reading",
 	"paralyzing",
 	"phasing",
+	//"{{physical effect}}",
 	"poisonous",
 	"radioactive",
 	"reflective",
@@ -149,6 +205,10 @@ var adjectives = [
 	"teleporting",
 	"vampiric",
 	"wall-crawling",
+]
+
+var monster_personality = [
+	// monsters: monster personality
 	"alien",
 	"aloof",
 	"bored",
@@ -185,6 +245,10 @@ var adjectives = [
 	"unimpressed",
 	"vain",
 	"xenophobic",
+]
+
+var treasure_trait = [
+	// treasure: treasure traits
 	"altered",
 	"ancient",
 	"blessed",
@@ -196,6 +260,8 @@ var adjectives = [
 	"damaged",
 	"disguised",
 	"enemy-alerting",
+	//"{{effect}}",
+	//"{{element}}",
 	"embellished",
 	"encoded",
 	"exotic",
@@ -219,6 +285,10 @@ var adjectives = [
 	"royal",
 	"toxic",
 	"vile",
+]
+
+var faction_trait = [
+	// the city: faction traits
 	"bankrupt",
 	"bureaucratic",
 	"charitable",
@@ -240,6 +310,7 @@ var adjectives = [
 	"insular",
 	"manipulative",
 	"martial",
+	//"{{personality}}",
 	"pious",
 	"popular",
 	"righteous",
@@ -254,6 +325,10 @@ var adjectives = [
 	"wealthy",
 	"well-prepared",
 	"xenophobic",
+]
+
+var wilderness_region_trait = [
+	// the wild: wilderness region traits
 	"ashen",
 	"blasted",
 	"blighted",
@@ -262,7 +337,9 @@ var adjectives = [
 	"corrupted",
 	"creeping",
 	"desolate",
+	//"{{dungeon trait}}",
 	"eternal",
+	//"{{ethereal effect}}",
 	"forsaken",
 	"frozen",
 	"haunted",
@@ -285,8 +362,13 @@ var adjectives = [
 	"thorny",
 	"thundering",
 	"torrential",
+	//"{{physical effect}}",
 	"wandering",
 	"withered",
+]
+
+var inn_adjective = [
+	// the wild: inn adjectives
 	"bellowing",
 	"blazing",
 	"bleak",
@@ -325,335 +407,69 @@ var adjectives = [
 	"wanton"
 ]
 
-// words that can be used as adjectives or nouns
-var adjectnouns = [
-	"acid",
-	"amber",
-	"bark",
-	"blood",
-	"bone",
-	"brine",
-	"clay",
-	"crow",
-	"crystal",
-	"ember",
-	"flesh",
-	"fungus",
-	"glass",
-	"honey",
-	"ice",
-	"insect",
-	"wood",
-	"lava",
-	"moss",
-	"obsidian",
-	"oil",
-	"poison",
-	"rat",
-	"salt",
-	"sand",
-	"sap",
-	"serpent",
-	"slime",
-	"stone",
-	"tar",
-	"thorn",
-	"vine",
-	"water",
-	"wine",
-	"wood",
-	"worm",
-	"ash",
-	"chaos",
-	"distortion",
-	"dream",
-	"dust",
-	"echo",
-	"ectoplasm",
-	"fire",
-	"fog",
-	"ghost",
-	"harmony",
-	"heat",
-	"light",
-	"lightning",
-	"memory",
-	"mind",
-	"mutation",
-	"negation",
-	"plague",
-	"plasma",
-	"probability",
-	"rain",
-	"rot",
-	"shadow",
-	"smoke",
-	"snow",
-	"soul",
-	"star",
-	"stasis",
-	"steam",
-	"thunder",
-	"time",
-	"void",
-	"warp",
-	"whisper",
-	"wind",
-	"aura",
-	"beacon",
-	"beam",
-	"blast",
-	"blob",
-	"bolt",
-	"bubble",
-	"call",
-	"cascade",
-	"circle",
-	"cloud",
-	"coil",
-	"cone",
-	"cube",
-	"dance",
-	"disk",
-	"field",
-	"form",
-	"gaze",
-	"loop",
-	"moment",
-	"nexus",
-	"portal",
-	"pulse",
-	"pyramid",
-	"ray",
-	"shard",
-	"sphere",
-	"spray",
-	"storm",
-	"swarm",
-	"torrent",
-	"touch",
-	"vortex",
-	"wave",
-	"word",
-	"alabaster",
-	"amber",
-	"aquamarine",
-	"azurite",
-	"beryl",
-	"black pearl",
-	"bloodstone",
-	"bone china",
-	"chalcedony",
-	"cinnabar",
-	"coral",
-	"diamond",
-	"ebony",
-	"emerald",
-	"fire agate",
-	"garnet",
-	"gold",
-	"ivory",
-	"jade",
-	"jasper",
-	"jet",
-	"lapis lazuli",
-	"malachite",
-	"moonstone",
-	"onyx",
-	"opal",
-	"pearl",
-	"platinum",
-	"porcelain",
-	"ruby",
-	"sapphire",
-	"serpentine",
-	"silver",
-	"star iron",
-	"topaz",
-	"turqoise",
-	"bog",
-	"boulder field",
-	"butte",
-	"cave",
-	"cliff",
-	"crag",
-	"crater",
-	"creek",
-	"crossing",
-	"ditch",
-	"field",
-	"forest",
-	"grove",
-	"hill",
-	"hollow",
-	"hot springs",
-	"lair",
-	"lake",
-	"lakebed",
-	"marsh",
-	"mesa",
-	"moor",
-	"pass",
-	"pit",
-	"pond",
-	"rapids",
-	"ravine",
-	"ridge",
-	"rise",
-	"river",
-	"rockslide",
-	"spring",
-	"swamp",
-	"thickets",
-	"valley",
-	"waterfall"
+var adjective = [
+	"{{physical_effect}}",
+	"{{ethereal_effect}}",
+	"{{monster_trait}}",
+	"{{monster_ability}}",
+	"{{monster_personality}}",
+	"{{treasure_trait}}",
+	"{{faction_trait}}",
+	"{{wilderness_region_trait}}",
+	"{{inn_adjective}}",
 ]
 
-var nouns = [
-	"altar",
-	"armor",
-	"arrow",
-	"beast",
-	"blade",
-	"cauldron",
-	"chain",
-	"chariot",
-	"claw",
-	"cloak",
-	"colossus",
-	"crown",
-	"elemental",
-	"eye",
-	"fountain",
-	"gate",
-	"golem",
+// NOUNS
+
+var item = [
+	"{{weapon_item}}",
+	"{{miscellaneous_item}}",
+	"{{worn_item}}",
+	"{{tool_item}}",
+]
+
+var weapon_item = [
+	// treasure: weapon items
+	"arming sword",
+	"backsword",
+	"battleaxe",
+	"blowpipe",
+	"claymore",
+	"club",
+	"crossbow",
+	"cutlass",
+	"dagger",
+	"flail",
+	"flanged mace",
+	"glaive",
+	"halberd",
 	"hammer",
-	"horn",
-	"key",
-	"mask",
-	"monolith",
-	"pit",
-	"prison",
-	"sentinel",
-	"servant",
-	"shield",
+	"hatchet",
+	"horsebow",
+	"hunting knife",
+	"lance",
+	"longbow",
+	"longsword",
+	"mace",
+	"mail",
+	"morningstar",
+	"pike",
+	"scimitar",
+	"shortbow",
+	"sickle",
+	"sling",
 	"spear",
-	"steed",
-	"swarm",
-	"tentacle",
-	"throne",
-	"torch",
-	"trap",
-	"wall",
-	"web",
-	"albatross",
-	"bat",
-	"beetle",
-	"songbird",
-	"butterfly",
-	"condor",
-	"crane",
-	"crow",
-	"dragonfly",
-	"eagle",
-	"falcon",
-	"firefly",
-	"flamingo",
-	"fly",
-	"flying squirrel",
-	"goose",
-	"gull",
-	"hummingbird",
-	"kingfisher",
-	"locust",
-	"magpie",
-	"mantis",
-	"mockingbird",
-	"mosquito",
-	"moth",
-	"owl",
-	"parrot",
-	"peacock",
-	"pelican",
-	"pteranodon",
-	"rooster",
-	"sparrow",
-	"swan",
-	"vulture",
-	"wasp",
-	"woodpecker",
-	"ant",
-	"ape",
-	"armadillo",
-	"badger",
-	"bear",
-	"boar",
-	"caterpillar",
-	"centipede",
-	"chameleon",
-	"cockroach",
-	"deer",
-	"elephant",
-	"ferret",
-	"fox",
-	"giraffe",
-	"goat",
-	"horse",
-	"human",
-	"mole",
-	"ostrich",
-	"ox",
-	"porcupine",
-	"rabbit",
-	"raccoon",
-	"rat",
-	"rhinoceros",
-	"scorpion",
-	"sheep",
-	"slug",
-	"snail",
-	"snake",
-	"spider",
-	"squirrel",
-	"tiger",
-	"wolf",
-	"wolverine",
-	"alligator",
-	"amoeba",
-	"anglerfish",
-	"beaver",
-	"clam",
-	"crab",
-	"dolphin",
-	"eel",
-	"frog",
-	"hippopotamus",
-	"jellyfish",
-	"leech",
-	"lobster",
-	"manatee",
-	"manta ray",
-	"muskrat",
-	"narwhal",
-	"newt",
-	"octopus",
-	"otter",
-	"penguin",
-	"platypus",
-	"pufferfish",
-	"salamander",
-	"sea anemone",
-	"sea urchin",
-	"seahorse",
-	"seal",
-	"shark",
-	"shrimp",
-	"squid",
-	"swordfish",
-	"tadpole",
-	"turtle",
-	"walrus",
-	"whale",
+	"staff",
+	"stake",
+	"stiletto",
+	"throwing axe",
+	"warhammer",
+	"warpick",
+	"whip",
+]
+
+var miscellaneous_item = [
+	// treasure: miscellaneous items
 	"bowl",
 	"brass bell",
 	"brooch",
@@ -690,6 +506,10 @@ var nouns = [
 	"skull",
 	"tobacco pipe",
 	"wine bottle",
+]
+
+var worn_item = [
+	// treasure: worn items
 	"belt",
 	"blouse",
 	"boots",
@@ -726,42 +546,10 @@ var nouns = [
 	"socks",
 	"trousers",
 	"veil",
-	"arming sword",
-	"backsword",
-	"battleaxe",
-	"blowpipe",
-	"slaymore",
-	"slub",
-	"crossbow",
-	"cutlass",
-	"dagger",
-	"flail",
-	"flanged mace",
-	"glaive",
-	"halberd",
-	"hammer",
-	"hatchet",
-	"horsebow",
-	"hunting knife",
-	"lance",
-	"longbow",
-	"longsword",
-	"mace",
-	"mail",
-	"morningstar",
-	"pike",
-	"scimitar",
-	"shortbow",
-	"sickle",
-	"sling",
-	"spear",
-	"staff",
-	"stake",
-	"stiletto",
-	"throwing axe",
-	"warhammer",
-	"warpick",
-	"whip",
+]
+
+var tool_item = [
+	// treasure: tool items
 	"acid flask",
 	"bear trap",
 	"bellows",
@@ -798,7 +586,172 @@ var nouns = [
 	"spikes",
 	"steel wire",
 	"tongs",
+]
+
+var physical_form = [
+	// magic: physical forms
+	"altar",
+	"armor",
+	"arrow",
+	"beast",
+	"blade",
+	"cauldron",
+	"chain",
+	"chariot",
+	"claw",
+	"cloak",
+	"colossus",
+	"crown",
+	"elemental",
+	"eye",
+	"fountain",
+	"gate",
+	"golem",
+	"hammer",
+	"horn",
+	"key",
+	"mask",
+	"monolith",
+	"pit",
+	"prison",
+	"sentinel",
+	"servant",
+	"shield",
+	"spear",
+	"steed",
+	"swarm",
+	"tentacle",
+	"throne",
+	"torch",
+	"trap",
+	"wall",
+	"web",
+]
+
+var aerial_animal = [
+	// monsters: aerial animals
+	"albatross",
+	"bat",
+	"beetle",
+	"songbird",
+	"butterfly",
+	"condor",
+	"crane",
+	"crow",
+	"dragonfly",
+	"eagle",
+	"falcon",
+	"firefly",
+	"flamingo",
+	"fly",
+	"flying squirrel",
+	"goose",
+	"gull",
+	"hummingbird",
+	"kingfisher",
+	"locust",
+	"magpie",
+	"mantis",
+	"mockingbird",
+	"mosquito",
+	"moth",
+	"owl",
+	"parrot",
+	"peacock",
+	"pelican",
+	"pteranodon",
+	"rooster",
+	"sparrow",
+	"swan",
+	"vulture",
+	"wasp",
+	"woodpecker",
+]
+
+var terrestrial_animal = [
+	// monsters: terrestrial animals
+	"ant",
+	"ape",
+	"armadillo",
+	"badger",
+	"bear",
+	"boar",
+	"caterpillar",
+	"centipede",
+	"chameleon",
+	"cockroach",
+	"deer",
+	"elephant",
+	"ferret",
+	"fox",
+	"giraffe",
+	"goat",
+	"horse",
+	"human",
+	"mole",
+	"ostrich",
+	"ox",
+	"porcupine",
+	"rabbit",
+	"raccoon",
+	"rat",
+	"rhinoceros",
+	"scorpion",
+	"sheep",
+	"slug",
+	"snail",
+	"snake",
+	"spider",
+	"squirrel",
+	"tiger",
+	"wolf",
+	"wolverine",
+]
+
+var aquatic_animal = [
+	// monsters: aquatic animals
+	"alligator",
+	"amoeba",
+	"anglerfish",
+	"beaver",
+	"clam",
+	"crab",
+	"dolphin",
+	"eel",
+	"frog",
+	"hippopotamus",
+	"jellyfish",
+	"leech",
+	"lobster",
+	"manatee",
+	"manta ray",
+	"muskrat",
+	"narwhal",
+	"newt",
+	"octopus",
+	"otter",
+	"penguin",
+	"platypus",
+	"pufferfish",
+	"salamander",
+	"sea anemone",
+	"sea urchin",
+	"seahorse",
+	"seal",
+	"shark",
+	"shrimp",
+	"squid",
+	"swordfish",
+	"tadpole",
+	"turtle",
+	"walrus",
+	"whale",
+]
+
+var magical_ingredient = [
+	// treasure: magical ingredients
 	"ancient liquor",
+	//"{{animal}}",
 	"blind eye",
 	"boiled cat",
 	//"{{book}} page",
@@ -807,6 +760,7 @@ var nouns = [
 	"corpse's hair",
 	"crossroad dust",
 	"cultist entrails",
+	//"{{edible plant}}",
 	"exotic spice",
 	"killer's hand",
 	"king's tooth",
@@ -815,8 +769,12 @@ var nouns = [
 	"lightning bolt",
 	"lodestone",
 	"monk's vow",
+	//"{{monster feature}}",
 	"newborn's cry",
 	"oil portrait",
+	//"{{physical element}}",
+	//"{{poisonous plant}}",
+	//"{{potion}}",
 	"pyre ember",
 	"queen bee",
 	"queen's blood",
@@ -824,9 +782,14 @@ var nouns = [
 	"star-metal",
 	"thief's finger",
 	"tomb flower",
+	//"{{valuable material}}",
 	"wedding ring",
 	"widow's tears",
 	"wizard skull",
+]
+
+var treasure_item = [
+	// treasure: treasure items
 	"alchemy recipe",
 	"amulet",
 	"astrolabe",
@@ -863,19 +826,32 @@ var nouns = [
 	"tapestry",
 	"telescope",
 	"treasure map",
+]
+
+var city_theme = [
+	// the city: city themes
+	//"{{animal}}",
 	"aristocracy",
 	"art",
 	"bureaucracy",
 	"castes",
 	"catacombs",
+	//"{{city activity}}",
+	//"{{city event}}",
 	"crime families",
 	"cruelty",
+	//"{{district theme}}",
+	//"{{divine domain}}",
+	//"{{faction}}",
 	"festivals",
 	"feuds",
 	"intrigue",
+	//"{{low class building}}",
 	"martial law",
 	"meritocracy",
+	//"{{npc}}",
 	"opulence",
+	//"{{physical element}}",
 	"pilgrimages",
 	"piracy",
 	"plutocracy",
@@ -887,8 +863,13 @@ var nouns = [
 	"thievery",
 	"trade",
 	"tyranny",
+	//"{{upper class building}}",
 	"wizardry",
 	"xenophobia",
+]
+
+var city_event = [
+	// the city: city events
 	"assassination",
 	"carnival",
 	"conscription",
@@ -925,7 +906,12 @@ var nouns = [
 	"shortage",
 	"tournament",
 	"trial",
+]
+
+var district_theme = [
+	// the city: district themes
 	"catacombs",
+	//"{{civilized npcs}}",
 	"construction",
 	"crafts",
 	"criminality",
@@ -942,6 +928,7 @@ var nouns = [
 	"industrialization",
 	"judgement",
 	"livestock",
+	//"{{low class building}}",
 	"marketplace",
 	"memorials",
 	"military",
@@ -953,9 +940,16 @@ var nouns = [
 	"science",
 	"trade",
 	"trash",
+	//"{{underworld npcs}}",
+	//"{{upper class building}}",
 	"vices",
+	//"{{wilderness npcs}}",
 	"wizardry",
 	"wonders",
+]
+
+var upper_class_building = [
+	// the city: upper class buildings
 	"academy",
 	"alchemist",
 	"archive",
@@ -992,6 +986,10 @@ var nouns = [
 	"townhouse",
 	"winery",
 	"zoo",
+]
+
+var lower_class_building = [
+	// the city: lower class buildings
 	"apothecary",
 	"asylum",
 	"baker",
@@ -1028,6 +1026,10 @@ var nouns = [
 	"watchtower",
 	"weaver",
 	"workshop",
+]
+
+var building_room = [
+	// the city: building rooms
 	"arboretum",
 	"atrium",
 	"attic",
@@ -1040,6 +1042,7 @@ var nouns = [
 	"cloakroom",
 	"dining room",
 	"dressing room",
+	//"{{dungeon room}}",
 	"garden",
 	"garret",
 	"greenhouse",
@@ -1063,6 +1066,10 @@ var nouns = [
 	"study",
 	"trophy room",
 	"wardrobe",
+]
+
+var tactical_street_feature = [
+	// the city: tactical street features
 	"arcade",
 	"awnings",
 	"balconies",
@@ -1071,12 +1078,14 @@ var nouns = [
 	"canal",
 	"carriages",
 	"catwalks",
+	//"{{city activity}}",
 	"climbable walls",
 	"clotheslines",
 	"crowd",
 	"dead end",
 	"dense fog",
 	"downpour",
+	//"{{dungeon activity}}",
 	"flooding",
 	"food stalls",
 	"fountain",
@@ -1096,6 +1105,11 @@ var nouns = [
 	"torn up street",
 	"vermin swarms",
 	"well",
+	//"{{wilderness activity}}",
+]
+
+var tactical_building_feature = [
+	// the city: tactical building features
 	//"{{animal}} nests",
 	"balconies",
 	"basement access",
@@ -1132,6 +1146,10 @@ var nouns = [
 	"unlit area",
 	"watchdogs",
 	"window drapes",
+]
+
+var faction = [
+	// the city: factions
 	"art movement",
 	"beggar's guild",
 	"black market",
@@ -1168,6 +1186,10 @@ var nouns = [
 	"street musicians",
 	"theater troupe",
 	"trade company",
+]
+
+var wilderness_region = [
+	// the wild: wilderness regions
 	"ashy",
 	"badlands",
 	"bay",
@@ -1204,6 +1226,10 @@ var nouns = [
 	"volvanic plain",
 	"wetlands",
 	"woodlands",
+]
+
+var wilderness_structure = [
+	// the wild: wilderness structures
 	"altar",
 	"aqueduct",
 	"bandit's camp",
@@ -1240,20 +1266,29 @@ var nouns = [
 	"wall",
 	"watchtower",
 	"waystone",
+]
+
+var wilderness_discovery = [
+	// the wild: wilderness discoveries
 	"blood stains",
 	"bones",
 	"broken weapons",
 	"burrow",
+	//"{{city acitivity}}",
+	//"{{civilized npc}}",
 	"cut ropes",
 	"dead animal",
+	//"{{dungeon activity}}",
 	"food scraps",
 	"grave marker",
 	"human corpse",
+	//"{{item}}",
 	//"lost {{npc}}",
 	"magical effect",
 	"map",
 	"message",
 	"migration",
+	//"{{mutation}}",
 	"nest",
 	"portal",
 	"resources",
@@ -1265,7 +1300,16 @@ var nouns = [
 	"tracks",
 	"trap",
 	"treasure cache",
+	//"{{underworld npc}}",
+	//"{{wilderness activity}}",
+	//"{{wilderness landmark}}",
+	//"{{wilderness structure}}",
+	//"{{wilderness npc}}",
 	"wizard fight",
+]
+
+var wilderness_hazard = [
+	// the wild: wilderness hazards
 	"avalanche",
 	"blizzard",
 	"brushfire",
@@ -1302,6 +1346,10 @@ var nouns = [
 	"tsunami",
 	"whirlpool",
 	"windstorm",
+]
+
+var edible_plant = [
+	// the wild: edible plants
 	"acorns",
 	"apples",
 	"asparagus",
@@ -1338,6 +1386,10 @@ var nouns = [
 	"wild garlic",
 	"wild grapes",
 	"wood sorrel",
+]
+
+var poisonous_plant = [
+	// the wild: poisonous plants
 	"angel's trumpet",
 	"baneberry",
 	"belladona",
@@ -1374,6 +1426,10 @@ var nouns = [
 	"wine-cap",
 	"wolfsbane",
 	"wormwood",
+]
+
+var inn_noun = [
+	// the wild: inn nouns
 	"axe",
 	"barrel",
 	"bear",
@@ -1410,20 +1466,27 @@ var nouns = [
 	"sword",
 	"whale",
 	"wife",
+]
+
+var dungeon_form = [
+	// the maze: dungeon forms
 	"arena",
 	"asylum",
 	"aviary",
 	"bank",
 	"baths",
 	"body",
+	//"{{building room}}",
 	"casino",
 	"catacombs",
 	"cave",
 	"court",
+	//"{{dungeon room}}",
 	"forge",
 	"garden",
 	"hideout",
-	"hoten",
+	"hotel",
+	//"{{lower class building}}",
 	"laboratory",
 	"library",
 	"market",
@@ -1439,9 +1502,14 @@ var nouns = [
 	"slave pit",
 	"temple",
 	"theater",
+	//"{{upper class building}}",
 	"university",
 	"vault",
 	"zoo",
+]
+
+var dungeon_ruination = [
+	// the maze: dungeon ruinations
 	"arcane disaster",
 	"army invasion",
 	"cannibalism",
@@ -1461,10 +1529,12 @@ var nouns = [
 	"fungus",
 	"haunting",
 	"ice",
+	//"{{insanity}}",
 	"lava flow",
 	"magical sleep",
 	"melted",
 	"monster attack",
+	//"{{mutation}}",
 	"outsider attack",
 	"overgrowth",
 	"petrification",
@@ -1476,12 +1546,17 @@ var nouns = [
 	"risen dead",
 	"many traps",
 	"war",
+]
+
+var dungeon_reward = [
+	// the maze: dungeon rewards
 	"ancient lore",
 	"animal ally",
 	"army",
 	"blessing",
 	"blueprints",
 	"cultural artifact",
+	//"{{enemy weakness}}",
 	"faction ally",
 	"forewarning",
 	"guide",
@@ -1492,7 +1567,7 @@ var nouns = [
 	"key",
 	"lost formula",
 	"machine",
-	//"magic {{item}}",
+	"magic {{item}}",
 	"magical ally",
 	"map",
 	"marital ally",
@@ -1506,12 +1581,19 @@ var nouns = [
 	"spell",
 	"transformation",
 	"transport",
+	//"{{treasure item}}",
 	"uncovered plot",
+	//"{{valuable material}}",
 	"vision",
 	"weapon",
+]
+
+var dungeon_room = [
+	// the maze: dungeon rooms
 	"armory",
 	"banquet hall",
 	"barracks",
+	//"{{building room}}",
 	"catacombs",
 	"cavern",
 	"chasm",
@@ -1524,6 +1606,7 @@ var nouns = [
 	"gate house",
 	"guard room",
 	"kennel",
+	//"{{lower class building}}",
 	"laboratory",
 	"mess hall",
 	"mine shaft",
@@ -1539,9 +1622,14 @@ var nouns = [
 	"throne room",
 	"torture room",
 	"treasury",
+	//"{{upper class building}}",
 	"vault",
 	"well",
 	"workshop",
+]
+
+var dungeon_room_detail = [
+	// the maze: dungeon room details
 	"bas-relief",
 	"blood trail",
 	"bones",
@@ -1578,6 +1666,10 @@ var nouns = [
 	"vibrations",
 	"vines",
 	"whispers",
+]
+
+var dungeon_hazard = [
+	// the maze: dungeon hazards
 	"acid drip",
 	"bloodsuckers",
 	"cave-in",
@@ -1614,6 +1706,10 @@ var nouns = [
 	"tight passage",
 	"toppling object",
 	"toxic fumes",
+]
+
+var trap_effect = [
+	// the maze: trap effects
 	"acid pool",
 	"adhesive",
 	"alarm",
@@ -1652,7 +1748,262 @@ var nouns = [
 	"wall spikes"
 ]
 
-var modifiers = [
+var noun = [
+	"{{weapon_item}}",
+	"{{miscellaneous_item}}",
+	"{{worn_item}}",
+	"{{tool_item}}",
+	"{{physical_form}}",
+	"{{aerial_animal}}",
+	"{{terrestrial_animal}}",
+	"{{aquatic_animal}}",
+	"{{magical_ingredient}}",
+	"{{treasure_item}}",
+	"{{city_theme}}",
+	"{{city_event}}",
+	"{{district_theme}}",
+	"{{upper_class_building}}",
+	"{{lower_class_building}}",
+	"{{building_room}}",
+	"{{tactical_street_feature}}",
+	"{{tactical_building_feature}}",
+	"{{faction}}",
+	"{{wilderness_region}}",
+	"{{wilderness_structure}}",
+	"{{wilderness_discovery}}",
+	"{{wilderness_hazard}}",
+	"{{edible_plant}}",
+	"{{poisonous_plant}}",
+	"{{inn_noun}}",
+	"{{dungeon_form}}",
+	"{{dungeon_ruination}}",
+	"{{dungeon_reward}}",
+	"{{dungeon_room}}",
+	"{{dungeon_room_detail}}",
+	"{{dungeon_hazard}}",
+	"{{trap_effect}}",
+]
+
+// ADJECTNOUNS
+//
+// words that can be used as either adjectives or nouns
+
+var ethereal_element = [
+	// magic: ethereal elements
+	"ash",
+	"chaos",
+	"distortion",
+	"dream",
+	"dust",
+	"echo",
+	"ectoplasm",
+	"fire",
+	"fog",
+	"ghost",
+	"harmony",
+	"heat",
+	"light",
+	"lightning",
+	"memory",
+	"mind",
+	"mutation",
+	"negation",
+	"plague",
+	"plasma",
+	"probability",
+	"rain",
+	"rot",
+	"shadow",
+	"smoke",
+	"snow",
+	"soul",
+	"star",
+	"stasis",
+	"steam",
+	"thunder",
+	"time",
+	"void",
+	"warp",
+	"whisper",
+	"wind",
+]
+
+var physical_element = [
+	// magic: physical elements
+	"acid",
+	"amber",
+	"bark",
+	"blood",
+	"bone",
+	"brine",
+	"clay",
+	"crow",
+	"crystal",
+	"ember",
+	"flesh",
+	"fungus",
+	"glass",
+	"honey",
+	"ice",
+	"insect",
+	"wood",
+	"lava",
+	"moss",
+	"obsidian",
+	"oil",
+	"poison",
+	"rat",
+	"salt",
+	"sand",
+	"sap",
+	"serpent",
+	"slime",
+	"stone",
+	"tar",
+	"thorn",
+	"vine",
+	"water",
+	"wine",
+	"wood",
+	"worm",
+]
+
+var valuable_material = [
+	// treasure: valuable materials
+	"alabaster",
+	"amber",
+	"aquamarine",
+	"azurite",
+	"beryl",
+	"black pearl",
+	"bloodstone",
+	"bone china",
+	"chalcedony",
+	"cinnabar",
+	"coral",
+	"diamond",
+	"ebony",
+	"emerald",
+	"fire agate",
+	"garnet",
+	"gold",
+	"ivory",
+	"jade",
+	"jasper",
+	"jet",
+	"lapis lazuli",
+	"malachite",
+	"moonstone",
+	"onyx",
+	"opal",
+	"pearl",
+	"platinum",
+	"porcelain",
+	"ruby",
+	"sapphire",
+	"serpentine",
+	"silver",
+	"star iron",
+	"topaz",
+	"turqoise",
+]
+
+var ethereal_forms = [
+	// magic: ethereal forms
+	"aura",
+	"beacon",
+	"beam",
+	"blast",
+	"blob",
+	"bolt",
+	"bubble",
+	"call",
+	"cascade",
+	"circle",
+	"cloud",
+	"coil",
+	"cone",
+	"cube",
+	"dance",
+	"disk",
+	"field",
+	"form",
+	"gaze",
+	"loop",
+	"moment",
+	"nexus",
+	"portal",
+	"pulse",
+	"pyramid",
+	"ray",
+	"shard",
+	"sphere",
+	"spray",
+	"storm",
+	"swarm",
+	"torrent",
+	"touch",
+	"vortex",
+	"wave",
+	"word",
+]
+
+var wilderness_landmarks = [
+	// the wild: wilderness landmarks
+	"bog",
+	"boulder field",
+	"butte",
+	"cave",
+	"cliff",
+	"crag",
+	"crater",
+	"creek",
+	"crossing",
+	"ditch",
+	"field",
+	"forest",
+	"grove",
+	"hill",
+	"hollow",
+	"hot springs",
+	"lair",
+	"lake",
+	"lakebed",
+	"marsh",
+	"mesa",
+	"moor",
+	"pass",
+	"pit",
+	"pond",
+	"rapids",
+	"ravine",
+	"ridge",
+	"rise",
+	"river",
+	"rockslide",
+	"spring",
+	"swamp",
+	"thickets",
+	"valley",
+	"waterfall"
+]
+
+// words that can be used as adjectives or nouns
+var adjectnoun = [
+	"{{ethereal_element}}",
+	"{{physical_element}}",
+	"{{valuable_material}}",
+	"{{ethereal_forms}}",
+	"{{wilderness_landmarks}}",
+]
+
+//  all_adjective = adjectnoun|adjective
+//  all_noun      = adjectnoun|noun
+var all_adjective = adjectnoun.concat(adjective);
+var all_noun      = adjectnoun.concat(noun);
+
+var modifier = [
+	// magic: mutations
 	"that ages",
 	"that attracts birds",
 	"in child-form",
@@ -1672,7 +2023,7 @@ var modifiers = [
 	"with a forked tongue",
 	"of genderswap",
 	"the hunchback",
-	//"in {{item}} form",
+	"in {{item}} form",
 	"with long arms",
 	"of hair loss",
 	"of tooth loss",
@@ -1680,7 +2031,7 @@ var modifiers = [
 	//"plus {{monster trait}}",
 	"with no eyes",
 	"with no mouth",
-	//"with {{physical element}} skin",
+	"with {{physical_element}} skin",
 	"with a second face",
 	"that sheds skin",
 	"that shrinks",
@@ -1689,6 +2040,7 @@ var modifiers = [
 	"with a slime trail",
 	"with translucent skin",
 	"that weeps blood",
+	// magic: insanities
 	"that always lies",
 	"that's always polite",
 	//"that thinks it's in {{animal}} form",
@@ -1725,6 +2077,7 @@ var modifiers = [
 	//"with a new {{personality}}",
 	"that says its thoughts",
 	"that sees dead people",
+	// monsters: monster features
 	"with antlers",
 	"with beak",
 	"with carapace",
@@ -1761,6 +2114,7 @@ var modifiers = [
 	"with trunk",
 	"with tusks",
 	"with wings",
+	// the wild: wilderness activities
 	"that ambushes",
 	"that calls for support",
 	"that captures",
@@ -1797,6 +2151,7 @@ var modifiers = [
 	"that targets the weakest",
 	"that toys with its foes",
 	"that uses terrain",
+	// monsters: monster weakness
 	"with a weakness to bells",
 	"with a weakness to birdsong",
 	"with a weakness to children",
@@ -1820,7 +2175,7 @@ var modifiers = [
 	"with a weakness to music",
 	//"with a weakness to {{methods}}",
 	"with a weakness to phylactery",
-	//"with a weakness to {{physical elements}}",
+	"with a weakness to {{physical_element}}",
 	"with a weakness to puzzles",
 	"with a weakness to riddles",
 	"with a weakness to rituals",
@@ -1828,11 +2183,12 @@ var modifiers = [
 	"with a weakness to sunlight",
 	"with a weakness to tears",
 	"with a weakness to true name",
-	//"with a weakness to {{valuable materials}}",
+	"with a weakness to {{valuable_material}}",
 	"with a weak spot",
-	//"with a weakness to {{weapon items}}",
+	"with a {{weapon_item}} weakness",
 	"with a weakness to wine",
 	"with a weakness to wormwood",
+	// treasure: book subjects
 	"of alchemy",
 	"of art",
 	"of astrology",
@@ -1869,25 +2225,26 @@ var modifiers = [
 	"of war chronicle",
 	"of who's who",
 	"of witch-hunting",
+	// treasure: potions
 	//"of {{animal}}-form",
 	"of body swap",
 	"of camouflage",
 	"of control animals",
-	//"of control {{element}}",
+	"of control {{element}}",
 	"of cure affliction",
 	"of detect evil",
 	"of detect gold",
 	"of detect hidden",
 	"of direction sense",
-	//"of {{element}}-form",
-	//"of {{element}}-skin",
+	"of {{element}}-form",
+	"of {{element}}-skin",
 	"of the extra arm",
 	"of flight",
 	"of ghost-speech",
 	"of heat vision",
 	//"of {{insanity}}",
 	"of invulnerable",
-	//"of {{item}}-form",
+	"of {{item}}-form",
 	"of magic immunity",
 	"of mirror image",
 	//"of {{monster ability}}",
@@ -1895,7 +2252,7 @@ var modifiers = [
 	//"of {{monster trait}}",
 	//"of {{mutation}}",
 	"of night vision",
-	//"of random {{spell}}",
+	"of {{spell}}",
 	"of restore health",
 	"of speed",
 	"of stretchy",
@@ -1905,6 +2262,7 @@ var modifiers = [
 	"of tongues",
 	"of water-breathing",
 	"of water-walking",
+	// the city: city activities
 	"that abducts",
 	"that begs",
 	"that brawls",
@@ -1915,6 +2273,7 @@ var modifiers = [
 	"that cooks",
 	"that dances",
 	"that duels",
+	//"{{dungeon activity}}",
 	"that executes",
 	"that extinguishes",
 	"that extorts",
@@ -1923,6 +2282,7 @@ var modifiers = [
 	"that hauls",
 	"that interrogates",
 	"that marries",
+	//"{{mission}}",
 	"that mourns",
 	"that parties",
 	"that patrols",
@@ -1938,6 +2298,8 @@ var modifiers = [
 	"that robs",
 	"that searches",
 	"that sells",
+	//"{{wilderness activity}}",
+	// the city: faction goals
 	"wants to advise leader",
 	"wants to avoid detection",
 	"wants to awaken being",
@@ -1974,16 +2336,19 @@ var modifiers = [
 	"wants to sumon evil",
 	"wants to survive",
 	"wants to transport goods",
+	// wilderness: wilderness activities
 	"that ambushes",
 	"that argues",
 	"that births",
 	"that builds",
 	"that buries",
 	"that captures",
+	//"{{city activity}}",
 	"that convenes",
 	"that demolishes",
 	"that dies",
 	"that duels",
+	//"{{dungeon activity}}",
 	"that eats",
 	"that excavates",
 	"that feasts",
@@ -2008,6 +2373,7 @@ var modifiers = [
 	"that traps",
 	"that wanders",
 	"that worships",
+	// the wild: inn quirks
 	"that's from 100 years in the past",
 	"that's always night",
 	"with animal fights",
@@ -2016,11 +2382,14 @@ var modifiers = [
 	"with a black market",
 	"that's brand new",
 	"with cannibals",
+	//"{{city activity}}",
 	"with a constant party",
 	"with a dancing contest",
 	"that's a dead drop",
+	//"{{dungeon form}}",
 	"that's expensive",
 	//"that's a {{faction}} hangout",
+	//"{{faction traits}}",
 	"with a famous chef",
 	"with fey patrons",
 	"that's a fight club",
@@ -2041,8 +2410,10 @@ var modifiers = [
 	"with a VIP lounge",
 	"with a voice in a well",
 	"for women only",
+	// the maze: dungeon activities
 	"that besieges",
 	"that captures",
+	//"{{city activity}}",
 	"that collects",
 	"that constructs",
 	"that controls",
@@ -2057,6 +2428,7 @@ var modifiers = [
 	"that loots",
 	"that maps",
 	"that mines",
+	//"{{monster tactic}}",
 	"that negotiates",
 	"that patrols",
 	"that performs ritual",
@@ -2072,8 +2444,10 @@ var modifiers = [
 	"that seizes",
 	"that tunnels",
 	"that unearths",
-	"that vanalizes",
+	"that vandalizes",
+	//"{{wilderness activity}}",
 	"that worships",
+	// the maze: dungeon tricks
 	"of absorption",
 	"of activation",
 	"of animation",
@@ -2085,13 +2459,16 @@ var modifiers = [
 	"of curses",
 	"of deception",
 	"of duplication",
+	//"{{ethereal effect}}",
 	"of exchange",
 	"of imprisonment",
 	"of instructions",
 	"of interrogation",
 	"of mind-control",
+	//"{{mission}}",
 	"of mood-alteration",
 	"of nullification",
+	//"{{physical effect}}",
 	"of planeshift",
 	"of protection",
 	"of rejuvenation",
@@ -2107,6 +2484,7 @@ var modifiers = [
 	"of transmutation",
 	"of transportation",
 	"of wonder",
+	// the maze: trap triggers
 	"activated by blowing",
 	"activated by breaking",
 	"activated by burning",
@@ -2150,44 +2528,51 @@ var modifiers = [
  * Using Math.round() will give you a non-uniform distribution!
  */
 function randomint(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function randomitem(list) {
 	return list[Math.floor(Math.random()*list.length)];
 }
 
-// generates a thing of the form
-// adjective [adjective|adjectnoun] noun|adjectnoun [modifier]
+function expand(string, i) {
+
+	// check for infinite recursion
+	var message = i + ": " + string;
+	if (i>100) {
+		console.log(message);
+		console.error("Too many table indirections");
+		return string;
+	}
+
+	var retval = string;
+	var regex = /{{([a-zA-Z0-9_]*)}}/g;
+	var matches = null;
+	var replacements = "";
+
+	// loop through regex matches
+	while (matches = regex.exec(string)) {
+		replacements = eval(matches[1]);
+		retval = retval.replace(matches[0], randomitem(replacements));
+	}
+
+	// recurse
+	console.log(message + " => " + retval);
+	if (regex.test(retval)) {
+		return expand(retval, i+1);
+	} else {
+		return retval;
+	}
+}
+
 function thinggen() {
-	var retval = "";
-
-	if (randomint(0,1) == 1) {
-		adjective = randomitem(adjectives);
-		retval = retval.concat(" ", adjective);
-	}
-
-	var adjective = randomitem(adjectives.concat(adjectnouns));
-	retval = retval.concat(" ", adjective);
-
-	var noun = randomitem(nouns.concat(adjectnouns));
-	retval = retval.concat(" ", noun);
-
-	if (randomint(0,1) == 1) {
-		var modifier = randomitem(modifiers);
-		retval = retval.concat(" ", modifier);
-	}
-
-	return retval.concat("<br/>");
+	return expand("{{maintable}}", 0) + "<br/>";
 }
 
 function main() {
-	//document.getElementsByTagName("code")[0].innerHTML=genCharacter();
-	//document.getElementsByTagName("code")[1].innerHTML=genCharacter();
-	//document.getElementsByTagName("code")[2].innerHTML=genCharacter();
-	//document.getElementsByTagName("code")[3].innerHTML=genCharacter();
 	var things = document.getElementsByClassName("thing");
 	for(var i = 0; i < things.length; i++) {
+		console.log("===");
 		things.item(i).innerHTML=thinggen();
 	}
 }
