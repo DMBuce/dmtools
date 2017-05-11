@@ -78,13 +78,13 @@ var animal = [
 var monster_adjective = [
 	"{{monster_trait}}",
 	"{{monster_ability}}",
-	"{{monster_tactic}}",
 	"{{monster_personality}}",
 ]
 
 var monster_modifier = [
 	"{{monster_feature}}",
 	"{{monster_weakness}}",
+	"{{monster_tactic}}",
 ]
 
 // TREASURE & EQUIPMENT
@@ -2811,7 +2811,7 @@ var modifier = [
 	"{{mutation}}",
 	"{{insanity}}",
 	"with {{monster_feature}}",
-	"{{wilderness_activity}}",
+	"{{monster_tactic}}",
 	"{{monster_weakness}}",
 	"of {{book_subject}}",
 	"of {{potion_effect}}",
