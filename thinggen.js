@@ -142,7 +142,7 @@ var magic_item = [
 ]
 
 // [treasure_trait] [valuable_material] [potion_effect|spell]
-magic_item_adjective = [
+var magic_item_adjective = [
 	"{{treasure_trait}}",
 	"{{valuable_material}}",
 	"{{treasure_trait}} {{valuable_material}}",
@@ -2076,7 +2076,7 @@ var valuable_material = [
 	"turqoise",
 ]
 
-var ethereal_forms = [
+var ethereal_form = [
 	// magic: ethereal forms
 	"aura",
 	"beacon",
@@ -2116,7 +2116,7 @@ var ethereal_forms = [
 	"word",
 ]
 
-var wilderness_landmarks = [
+var wilderness_landmark = [
 	// the wild: wilderness landmarks
 	"bog",
 	"boulder field",
@@ -2161,8 +2161,8 @@ var adjectnoun = [
 	"{{ethereal_element}}",
 	"{{physical_element}}",
 	"{{valuable_material}}",
-	"{{ethereal_forms}}",
-	"{{wilderness_landmarks}}",
+	"{{ethereal_form}}",
+	"{{wilderness_landmark}}",
 ]
 
 //  any_adjective = adjectnoun|adjective
@@ -2292,8 +2292,8 @@ var monster_feature = [
 	"wings",
 ]
 
-var wilderness_activity = [
-	// the wild: wilderness activities
+var monster_tactic = [
+	// monsters: monster tactics
 	"that ambushes",
 	"that calls for support",
 	"that captures",
