@@ -149,7 +149,7 @@ magic_item_adjective = [
 ]
 
 var magic_item_base = [
-	"wand of {{potion effect}}"
+	"wand of {{potion_effect}}",
 
 	"{{magic_item_noun}} of {{potion_effect}}",
 	"{{magic_item_noun}} of {{spell}}",
@@ -157,7 +157,7 @@ var magic_item_base = [
 	"{{ethereal_element}} {{magic_item_noun}}",
 	"{{ethereal_form}} {{magic_item_noun}}",
 
-	"{{magical_ingredient}} of {{potion effect}}",
+	"{{magical_ingredient}} of {{potion_effect}}",
 ]
 
 var magic_item_noun = [
