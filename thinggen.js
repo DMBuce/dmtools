@@ -8,22 +8,32 @@
 
 var maintable = [
 	//"{{dude}}",
-	"{{thing}}",
-	"{{thing}}",
-	"{{thing}}",
-	"{{thing}}",
+	"{{mazerat_thing}}",
+	//"{{thing}}",
+	//"{{thing}}",
+	//"{{thing}}",
+	//"{{thing}}",
 ]
 
-// all_adjective = adjective|adjectnoun
-// all_noun = noun|adjectnoun
-// [adjective] all_adjective all_noun [modifier]
+// THINGS
+//
+// [adjective] adjective|adjectnoun noun|adjectnoun [modifier]
 var thing = [
-	"{{all_adjective}} {{all_noun}}",
-	"{{adjective}} {{all_adjective}} {{all_noun}}",
-	"{{all_adjective}} {{all_noun}} {{modifier}}",
-	"{{adjective}} {{all_adjective}} {{all_noun}} {{modifier}}"
+	"{{any_adjective}} {{any_noun}}",
+	"{{adjective}} {{any_adjective}} {{any_noun}}",
+	"{{any_adjective}} {{any_noun}} {{modifier}}",
+	"{{adjective}} {{any_adjective}} {{any_noun}} {{modifier}}"
 ]
 
+var mazerat_thing = [
+	"{{monster}}",
+	//"{{character}}",
+	"{{treasure}}",
+]
+
+// SPELLS
+//
+// effect|element form|element
 var spell = [
 	"{{effect}} {{form}}",
 	"{{element}} {{form}}",
@@ -43,6 +53,119 @@ var element = [
 var form = [
 	"{{physical_form}}",
 	"{{ethereal_form}}",
+]
+
+// MONSTERS
+
+var monster = [
+	"{{element}}-{{animal}}",
+	"{{animal}}-{{animal}}",
+	"{{monster_adjective}} {{animal}}",
+	"{{monster_adjective}} {{animal}}-{{animal}}",
+	"{{monster_adjective}} {{monster_adjective}} {{animal}}",
+	"{{animal}}-{{animal}} {{monster_modifier}}",
+	"{{monster_adjective}} {{animal}} {{monster_modifier}}",
+	"{{monster_adjective}} {{animal}}-{{animal}} {{monster_modifier}}",
+	"{{monster_adjective}} {{monster_adjective}} {{animal}} {{monster_modifier}}",
+]
+
+var animal = [
+	"{{aerial_animal}}",
+	"{{terrestrial_animal}}",
+	"{{aquatic_animal}}",
+]
+
+var monster_adjective = [
+	"{{monster_trait}}",
+	"{{monster_ability}}",
+	"{{monster_tactic}}",
+	"{{monster_personality}}",
+]
+
+var monster_modifier = [
+	"{{monster_feature}}",
+	"{{monster_weakness}}",
+]
+
+// TREASURE & EQUIPMENT
+
+var treasure = [
+	"{{mundane_treasure}}",
+	"{{magic_consumable}}",
+	"{{magic_consumable}}",
+	"{{magic_item}}",
+]
+
+// [treasure_trait] [valuable_material] mundane_item [of book_subject]
+// [treasure_trait] magical_ingredient [of book_subject]
+var mundane_treasure = [
+	// mundane_items
+	"{{mundane_item}} of {{book_subject}}",
+	"{{valuable_material}} {{mundane_item}}",
+	"{{treasure_trait}} {{mundane_item}}",
+	"{{treasure_trait}} {{valuable_material}} {{mundane_item}}",
+	"{{treasure_trait}} {{mundane_item}} of {{book_subject}}",
+	"{{valuable_material}} {{mundane_item}} of {{book_subject}}",
+	"{{treasure_trait}} {{valuable_material}} {{mundane_item}} of {{book_subject}}",
+
+	// magical_ingredients
+	"{{treasure_trait}} {{magical_ingredient}} of {{book_subject}}",
+	"{{treasure_trait}} {{magical_ingredient}}",
+	"{{magical_ingredient}} of {{book_subject}}",
+	"{{magical_ingredient}}",
+]
+
+var mundane_item = [
+	"{{miscellaneous_item}}",
+	"{{worn_item}}",
+	"{{weapon_item}}",
+	"{{literature}}",
+	"{{tool_item}}",
+	"{{treasure_item}}",
+]
+
+var magic_consumable = [
+	"potion of healing",
+	"potion of healing",
+	"potion of {{potion_effect}}",
+	"potion of {{potion_effect}}",
+	"potion of {{spell}}",
+	"potion of {{spell}}",
+	"scroll of raise dead",
+	"scroll of {{potion_effect}}",
+	"scroll of {{spell}}",
+]
+
+var magic_item = [
+	"{{magic_item_adjective}} {{magic_item_base}}",
+	"{{magic_item_base}}",
+]
+
+// [treasure_trait] [valuable_material] [potion_effect|spell]
+magic_item_adjective = [
+	"{{treasure_trait}}",
+	"{{valuable_material}}",
+	"{{treasure_trait}} {{valuable_material}}",
+]
+
+var magic_item_base = [
+	"wand of {{potion effect}}"
+
+	"{{magic_item_noun}} of {{potion_effect}}",
+	"{{magic_item_noun}} of {{spell}}",
+	"{{magic_item_noun}} of {{effect}}",
+	"{{ethereal_element}} {{magic_item_noun}}",
+	"{{ethereal_form}} {{magic_item_noun}}",
+
+	"{{magical_ingredient}} of {{potion effect}}",
+]
+
+var magic_item_noun = [
+	"{{worn_item}}",
+	"{{worn_item}}",
+	"{{weapon_item}}",
+	"{{weapon_item}}",
+	"{{item}}",
 ]
 
 // ADJECTIVES
@@ -137,7 +260,7 @@ var monster_trait = [
 	"colossal",
 	"crystalline",
 	"decaying",
-	//"{{ethereal element}}",
+	"{{ethereal_element}}",
 	"ethereal",
 	"ever-young",
 	"eyeless",
@@ -153,7 +276,7 @@ var monster_trait = [
 	"luminous",
 	"many-headed",
 	"mechanical",
-	//"{{physical element}}",
+	"{{physical_element}}",
 	"planar",
 	"reflective",
 	"rubbery",
@@ -178,7 +301,7 @@ var monster_ability = [
 	"duplicating",
 	"electric",
 	"entangling",
-	//"{{ethereal effect}}",
+	"{{ethereal_effect}}",
 	"exploding",
 	"flying",
 	"gaze weapon",
@@ -191,7 +314,7 @@ var monster_ability = [
 	"mind-reading",
 	"paralyzing",
 	"phasing",
-	//"{{physical effect}}",
+	"{{physical_effect}}",
 	"poisonous",
 	"radioactive",
 	"reflective",
@@ -404,7 +527,7 @@ var inn_adjective = [
 	"wicked",
 	"tipsy",
 	"whistling",
-	"wanton"
+	"wanton",
 ]
 
 var adjective = [
@@ -421,11 +544,56 @@ var adjective = [
 
 // NOUNS
 
+var literature = [
+	// treasure: book subjects
+	"alchemical recipe",
+	"picture",
+	"drawing",
+	"astrology chart",
+	"blackmail letter",
+	"atlas",
+	"map",
+	"chart",
+	"conspiracy theory",
+	"cookbook",
+	"recipe",
+	"wanted poster",
+	"divination book",
+	"etiquette book",
+	"fashion book",
+	"family tree",
+	"hagiography book",
+	"page from a history book",
+	"journal entry",
+	"language book",
+	"page from a book of laws",
+	"letter",
+	"writings of a lost empire",
+	"writings of a lost place",
+	"love poem",
+	"page from a book of monsters",
+	"mythology book",
+	"book of odd customs",
+	"book of oratory",
+	"propaganda letter",
+	"written prophecy",
+	"siegecraft book",
+	"book of songs",
+	"book of state secrets",
+	"sword fighting book",
+	"theology book",
+	"book of treasures",
+	"war chronicle",
+	"book of who's who",
+	"witch-hunting book",
+]
+
 var item = [
-	"{{weapon_item}}",
 	"{{miscellaneous_item}}",
 	"{{worn_item}}",
+	"{{weapon_item}}",
 	"{{tool_item}}",
+	"{{treasure_item}}",
 ]
 
 var weapon_item = [
@@ -774,7 +942,7 @@ var magical_ingredient = [
 	"oil portrait",
 	//"{{physical element}}",
 	//"{{poisonous plant}}",
-	//"{{potion}}",
+	"potion of {{potion_effect}}",
 	"pyre ember",
 	"queen bee",
 	"queen's blood",
@@ -1567,7 +1735,7 @@ var dungeon_reward = [
 	"key",
 	"lost formula",
 	"machine",
-	"magic {{item}}",
+	"{{magic_item}}",
 	"magical ally",
 	"map",
 	"marital ally",
@@ -1997,12 +2165,14 @@ var adjectnoun = [
 	"{{wilderness_landmarks}}",
 ]
 
-//  all_adjective = adjectnoun|adjective
-//  all_noun      = adjectnoun|noun
-var all_adjective = adjectnoun.concat(adjective);
-var all_noun      = adjectnoun.concat(noun);
+//  any_adjective = adjectnoun|adjective
+//  any_noun      = adjectnoun|noun
+var any_adjective = adjectnoun.concat(adjective);
+var any_noun      = adjectnoun.concat(noun);
 
-var modifier = [
+// MODIFIERS
+
+var mutation = [
 	// magic: mutations
 	"that ages",
 	"that attracts birds",
@@ -2040,10 +2210,13 @@ var modifier = [
 	"with a slime trail",
 	"with translucent skin",
 	"that weeps blood",
+]
+
+var insanity = [
 	// magic: insanities
 	"that always lies",
 	"that's always polite",
-	//"that thinks it's in {{animal}} form",
+	"that thinks it's in {{animal}} form",
 	"that cannot count",
 	"that cannot lie",
 	"that's faceblind",
@@ -2070,50 +2243,56 @@ var modifier = [
 	"that hates violence",
 	"that thinks it's invisible",
 	"that thinks it's invulnerable",
-	//"that thinks it has {{monster ability}}",
-	//"that thinks it has {{monster feature}}",
-	//"that thinks it has {{monster trait}}",
+	"that thinks it has {{monster_ability}}",
+	"that thinks it has {{monster_feature}}",
+	"that thinks it's {{monster_trait}}",
 	"that must sing",
 	//"with a new {{personality}}",
 	"that says its thoughts",
 	"that sees dead people",
+]
+
+var monster_feature = [
 	// monsters: monster features
-	"with antlers",
-	"with beak",
-	"with carapace",
-	"with claws",
-	"with compound eyes",
-	"with eye stalks",
-	"with fangs",
-	"with fins",
-	"with fur",
-	"with gills",
-	"with hooves",
-	"with horns",
-	"the legless",
-	"with long tongue",
-	"the many-eyed",
-	"the many-limbed",
-	"with mucus",
-	"with pincers",
-	"with plates",
-	"with plumage",
-	"with proboscis",
-	"with scales",
-	"with segments",
-	"with shaggy hair",
-	"with shell",
-	"with spikes",
-	"with spinnerets",
-	"with spines",
-	"with stinger",
-	"with suction cups",
-	"with tail",
-	"with talons",
-	"with tentacles",
-	"with trunk",
-	"with tusks",
-	"with wings",
+	"antlers",
+	"beak",
+	"carapace",
+	"claws",
+	"compound eyes",
+	"eye stalks",
+	"fangs",
+	"fins",
+	"fur",
+	"gills",
+	"hooves",
+	"horns",
+	"no legs",
+	"long tongue",
+	"many eyes",
+	"many limbs",
+	"mucus",
+	"pincers",
+	"plates",
+	"plumage",
+	"proboscis",
+	"scales",
+	"segments",
+	"shaggy hair",
+	"shell",
+	"spikes",
+	"spinnerets",
+	"spines",
+	"stinger",
+	"suction cups",
+	"tail",
+	"talons",
+	"tentacles",
+	"trunk",
+	"tusks",
+	"wings",
+]
+
+var wilderness_activity = [
 	// the wild: wilderness activities
 	"that ambushes",
 	"that calls for support",
@@ -2151,6 +2330,9 @@ var modifier = [
 	"that targets the weakest",
 	"that toys with its foes",
 	"that uses terrain",
+]
+
+var monster_weakness = [
 	// monsters: monster weakness
 	"with a weakness to bells",
 	"with a weakness to birdsong",
@@ -2168,7 +2350,7 @@ var modifier = [
 	"with a weakness to a holy icon",
 	"with a weakness to holy water",
 	"with a weakness to home cooking",
-	//"with a weakness to {{insanities}}",
+	"{{insanity}}",
 	"with a weakness to mirrors",
 	"with a weakness to mistletoe",
 	"with a weakness to moonlight",
@@ -2188,80 +2370,164 @@ var modifier = [
 	"with a {{weapon_item}} weakness",
 	"with a weakness to wine",
 	"with a weakness to wormwood",
+]
+
+var book_subject = [
 	// treasure: book subjects
-	"of alchemy",
-	"of art",
-	"of astrology",
-	"of blackmail",
-	"of charts & maps",
-	"of conspiracies",
-	"of cookbook",
-	"of criminals",
-	"of divination",
-	"of etiquette",
-	"of fashion",
-	"of genealogy",
-	"of hagiography",
-	"of history",
-	"of journal",
-	"of language",
-	"of laws",
-	"of letters",
-	"of lost empires",
-	"of lost places",
-	"of love poems",
-	"of monsters",
-	"of mythology",
-	"of odd customs",
-	"of oratory",
-	"of propaganda",
-	"of prophecies",
-	"of siegecraft",
-	"of songs",
-	"of state secrets",
-	"of sword fighting",
-	"of theology",
-	"of treasures",
-	"of war chronicle",
-	"of who's who",
-	"of witch-hunting",
+	"alchemy",
+	"art",
+	"astrology",
+	"blackmail",
+	"charts & maps",
+	"conspiracies",
+	"cookbook",
+	"criminals",
+	"divination",
+	"etiquette",
+	"fashion",
+	"genealogy",
+	"hagiography",
+	"history",
+	"journal",
+	"language",
+	"laws",
+	"letters",
+	"lost empires",
+	"lost places",
+	"love poems",
+	"monsters",
+	"mythology",
+	"odd customs",
+	"oratory",
+	"propaganda",
+	"prophecies",
+	"siegecraft",
+	"songs",
+	"state secrets",
+	"sword fighting",
+	"theology",
+	"treasures",
+	"war chronicle",
+	"who's who",
+	"witch-hunting",
+]
+
+var rare_potion_effect = [
+	// magic: insanities
+	"lying",
+	"politeness",
+	"delusional {{animal}}-form",
+	//"cannot count",
+	"truth",
+	"face-blindness",
+	"bird-fearing",
+	"blood-fearing",
+	"book-fearing",
+	"darkness-fearing",
+	"fire-fearing",
+	"gold-fearing",
+	"horse-fearing",
+	"iron-fearing",
+	"music-fearing",
+	//"own hand-fearing",
+	//"a PC-fearing",
+	"rain-fearing",
+	"river-fearing",
+	"silence-fearing",
+	"sleep-fearing",
+	"sunlight-fearing",
+	"moon-fearing",
+	"tree-fearing",
+	"delusional genius",
+	"delusional gorgeousness",
+	"violence-fearing",
+	"delusional invisibility",
+	"delusional invulnerability",
+	//"delusional {{monster_ability}}",
+	"delusional {{monster_feature}}",
+	//"delusions of {{monster_trait}}",
+	"singing",
+	//"{{personality}}",
+	"thought-saying",
+	"dead-seeing",
+	// magic: mutations
+	"aging",
+	"birdcalling",
+	"child-form",
+	"corpulence",
+	"hairiness",
+	"{{animal}} arms",
+	"{{animal}} eyes",
+	"{{animal}} head",
+	"{{animal}} legs",
+	"{{animal}} mouth",
+	"{{animal}} skin",
+	"cyclops",
+	"extra arms",
+	"extra eyes",
+	"extra legs",
+	"fork-tongue",
+	"genderswap",
+	"hunchback",
+	"long arms",
+	"hair loss",
+	"tooth loss",
+	"eyelessness",
+	"mouthlessness",
+	"{{physical_element}}-skin",
+	"second face",
+	"skin-shedding",
+	"shrinking",
+	"shriveling",
+	"skin boils",
+	"slime trail",
+	"translucent skin",
+	"blood-weeping",
+]
+
+var potion_effect = [
 	// treasure: potions
-	//"of {{animal}}-form",
-	"of body swap",
-	"of camouflage",
-	"of control animals",
-	"of control {{element}}",
-	"of cure affliction",
-	"of detect evil",
-	"of detect gold",
-	"of detect hidden",
-	"of direction sense",
-	"of {{element}}-form",
-	"of {{element}}-skin",
-	"of the extra arm",
-	"of flight",
-	"of ghost-speech",
-	"of heat vision",
-	//"of {{insanity}}",
-	"of invulnerable",
-	"of {{item}}-form",
-	"of magic immunity",
-	"of mirror image",
-	//"of {{monster ability}}",
-	//"of {{monster feature}}",
-	//"of {{monster trait}}",
-	//"of {{mutation}}",
-	"of night vision",
-	"of {{spell}}",
-	"of restore health",
-	"of speed",
-	"of stretchy",
-	"of super-jump",
-	"of super-strength",
-	"of telekinesis",
-	"of tongues",
-	"of water-breathing",
-	"of water-walking",
+	"{{animal}}-form",
+	"body swap",
+	"camouflage",
+	"control animals",
+	"control {{element}}",
+	"cure affliction",
+	"detect evil",
+	"detect gold",
+	"detect hidden",
+	"direction sense",
+	"{{element}}-form",
+	"{{element}}-skin",
+	"the extra arm",
+	"flight",
+	"ghost-speech",
+	"heat vision",
+	//"{{insanity}}",
+	"{{rare_potion_effect}}",
+	"invulnerability",
+	"{{item}}-form",
+	"magic immunity",
+	"mirror image",
+	"{{monster_ability}}",
+	"{{monster_feature}}",
+	"{{monster_trait}}",
+	//"{{mutation}}",
+	"{{rare_potion_effect}}",
+	"night vision",
+	"{{spell}}",
+	"healing",
+	"speed",
+	"stretchy",
+	"super-jump",
+	"super-strength",
+	"telekinesis",
+	"tongues",
+	"water-breathing",
+	"water-walking",
+]
+
+var city_activity = [
 	// the city: city activities
 	"that abducts",
 	"that begs",
@@ -2299,6 +2565,9 @@ var modifier = [
 	"that searches",
 	"that sells",
 	//"{{wilderness activity}}",
+]
+
+var faction_goal = [
 	// the city: faction goals
 	"wants to advise leader",
 	"wants to avoid detection",
@@ -2336,6 +2605,9 @@ var modifier = [
 	"wants to sumon evil",
 	"wants to survive",
 	"wants to transport goods",
+]
+
+var wilderness_activity = [
 	// wilderness: wilderness activities
 	"that ambushes",
 	"that argues",
@@ -2373,6 +2645,9 @@ var modifier = [
 	"that traps",
 	"that wanders",
 	"that worships",
+]
+
+var inn_quirk = [
 	// the wild: inn quirks
 	"that's from 100 years in the past",
 	"that's always night",
@@ -2410,6 +2685,9 @@ var modifier = [
 	"with a VIP lounge",
 	"with a voice in a well",
 	"for women only",
+]
+
+var dungeon_activity = [
 	// the maze: dungeon activities
 	"that besieges",
 	"that captures",
@@ -2447,6 +2725,9 @@ var modifier = [
 	"that vandalizes",
 	//"{{wilderness activity}}",
 	"that worships",
+]
+
+var dungeon_trick = [
 	// the maze: dungeon tricks
 	"of absorption",
 	"of activation",
@@ -2484,6 +2765,9 @@ var modifier = [
 	"of transmutation",
 	"of transportation",
 	"of wonder",
+]
+
+var trap_trigger = [
 	// the maze: trap triggers
 	"activated by blowing",
 	"activated by breaking",
@@ -2521,6 +2805,23 @@ var modifier = [
 	"activated by unbalancing",
 	"activated by unearthing",
 	"activated by writing"
+]
+
+var modifier = [
+	"{{mutation}}",
+	"{{insanity}}",
+	"with {{monster_feature}}",
+	"{{wilderness_activity}}",
+	"{{monster_weakness}}",
+	"of {{book_subject}}",
+	"of {{potion_effect}}",
+	"{{city_activity}}",
+	"{{faction_goal}}",
+	"{{wilderness_activity}}",
+	"{{inn_quirk}}",
+	"{{dungeon_activity}}",
+	"{{dungeon_trick}}",
+	"{{trap_trigger}}",
 ]
 
 /**
