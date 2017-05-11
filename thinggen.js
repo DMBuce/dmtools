@@ -58,8 +58,8 @@ var form = [
 // MONSTERS
 
 var monster = [
-	"{{element}}-{{animal}}",
-	"{{animal}}-{{animal}}",
+	"{{element}} {{animal}}",
+	"{{animal}} {{animal}}",
 	"{{monster_adjective}} {{animal}}",
 	"{{monster_adjective}} {{animal}}-{{animal}}",
 	"{{monster_adjective}} {{monster_adjective}} {{animal}}",
