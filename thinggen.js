@@ -10,6 +10,8 @@ var maintable = [
 	"{{dude}}",
 	//"{{mazerat_thing}}",
 	"{{thing}}",
+	"{{thing}}",
+	"{{thing}}",
 ]
 
 // THINGS
