@@ -7,7 +7,7 @@
 // * the maze: dungeon layout (pg 10)
 
 var maintable = [
-	"{{npc}}",
+	"{{dude}}",
 	//"{{mazerat_thing}}",
 	"{{thing}}",
 ]
@@ -3540,10 +3540,10 @@ var npc_goal = [
 	// characters: dude goals
 	"who wants a better life",
 	"who wants acceptance",
-	"who wants to acquire {{item}}",
+	"who wants to acquire {{magic_item}}",
 	"who wants to craft {{item}",
 	"who wants to destroy {{faction}}",
-	"who wants to destroy {{item}}",
+	"who wants to destroy {{magic_item}}",
 	"who wants enlightenment",
 	"who wants fame",
 	"who wants to found {{faction}}",
