@@ -81,7 +81,7 @@ var monster_adjective = [
 ]
 
 var monster_modifier = [
-	"{{monster_feature}}",
+	"with {{monster_feature}}",
 	"{{monster_weakness}}",
 	"{{monster_tactic}}",
 ]
