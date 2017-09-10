@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+
+<title>Fantasy Thing Generator</title>
+<link rel="stylesheet" href="./style.css" type="text/css" />
+<script src="language.js"></script>
+</head>
+<body>
+<!-- <br class="spacer"/> -->
+<h2>Fantasy Language Transliterator</h2>
+<table id="langtable"><tr>
+	<td>
+		English<br/>
+		<textarea id="english" rows="10" cols="40"></textarea>
+		<br/><br/>
+		<button onclick="translateLatin()"  >Translate</button>
+	</td>
+	<td>
+		Druidic<br/>
+		<textarea id="druidic" rows="10" cols="40"/></textarea>
+		<br/><br/>
+		<button onclick="translateDruidic()">Translate</button><br/>
+		<input type="checkbox" id="forfeda">Use Forfeda</input>
+	</td>
+	<td>
+		Dwarven<br/>
+		<textarea id="dwarven" rows="10" cols="40">Not implemented :(</textarea>
+		<br/><br/>
+		<button onclick="translateDwarven()">Translate</button>
+	</td>
+</tr></table>
+</body>
+</html>
