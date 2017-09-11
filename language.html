@@ -2,7 +2,7 @@
 <head>
 <meta charset="utf-8"/>
 
-<title>Fantasy Thing Generator</title>
+<title>Fantasy Transliterator</title>
 <link rel="stylesheet" href="./style.css" type="text/css" />
 <script src="language.js"></script>
 </head>
@@ -14,14 +14,15 @@
 		English<br/>
 		<textarea id="english" rows="10" cols="40"></textarea>
 		<br/><br/>
-		<button onclick="translateLatin()"  >Translate</button>
+		<button onclick="translateLatin()"  >Translate</button><br/>
+		<input type="checkbox" id="html">Translate to HTML</input>
 	</td>
 	<td>
 		Druidic<br/>
 		<textarea id="druidic" rows="10" cols="40"/></textarea>
 		<br/><br/>
 		<button onclick="translateDruidic()">Translate</button><br/>
-		<input type="checkbox" id="forfeda">Use Forfeda</input>
+		<input type="checkbox" id="forfeda" checked>Use Forfeda</input>
 	</td>
 	<td>
 		Dwarven<br/>

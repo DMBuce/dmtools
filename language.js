@@ -1,4 +1,6 @@
 var druidic = {
+	"^" : "᚛",
+	"$" : "᚜",
 	" " : " ",
 	"b" : "ᚁ",
 	"l" : "ᚂ",
@@ -55,12 +57,47 @@ var druidic = {
 	"ᚙ": "ae",
 	"ᚚ": "p" 
 };
-//&#5787;&#5760;&#5788;
-var druidstart = "᚛";
-var druidend   = "᚜";
+
+var druidichtml = {
+	"^" : "&#5787;",
+	"$" : "&#5788;",
+	" " : "&#5760;",
+	"b" : "&#5761;",
+	"l" : "&#5762;",
+	"f" : "&#5763;",
+	"s" : "&#5764;",
+	"n" : "&#5765;",
+	"h" : "&#5766;",
+	"d" : "&#5767;",
+	"t" : "&#5768;",
+	"c" : "&#5769;",
+	"q" : "&#5770;",
+	"m" : "&#5771;",
+	"g" : "&#5772;",
+	"ng": "&#5773;",
+	"z" : "&#5774;",
+	"r" : "&#5775;",
+	"a" : "&#5776;",
+	"o" : "&#5777;",
+	"u" : "&#5778;",
+	"e" : "&#5779;",
+	"i" : "&#5780;",
+	"ea": "&#5781;",
+	"oi": "&#5782;",
+	"ui": "&#5783;",
+	"ia": "&#5784;",
+	"ae": "&#5785;",
+	"p" : "&#5786;"
+}
 
 function translateLatin() {
 	var str = document.getElementById("english").value.toLowerCase();
+
+	var convarr = druidic;
+	if (document.getElementById("html").checked) {
+		console.log(document.getElementById("html").value);
+		convarr = druidichtml;
+	}
 
 	// replace letters not in ogham with the closest thing
 	str = str.replace(/j/g, "ch");
@@ -70,26 +107,27 @@ function translateLatin() {
 	str = str.replace(/x/g, "cs");
 	str = str.replace(/y/g, "ea");
 
-	// strip out chars that druidic can't handle
+	// strip out chars that convarr can't handle
 	str = str.replace(/[^\n abcdefghilmnopqrstuz]*/g, "");
 
 	// add start/end markers
-	str = str.replace(/^/, druidstart);
-	str = str.replace(/$/, druidend);
+	str = str.replace(/^/, convarr["^"]);
+	str = str.replace(/$/, convarr["$"]);
+	str = str.replace(/\n/g, convarr["$"].concat("\n", convarr["^"]));
 
 	// replace double letters
-	str = str.replace(/ng/g, druidic["ng"]);
-	if (document.getElementById("forfeda").value == "on") {
-		str = str.replace(/ea/g, druidic["ea"]);
-		str = str.replace(/oi/g, druidic["oi"]);
-		str = str.replace(/ui/g, druidic["ui"]);
-		str = str.replace(/ia/g, druidic["ia"]);
-		str = str.replace(/ae/g, druidic["ae"]);
+	str = str.replace(/ng/g, convarr["ng"]);
+	if (document.getElementById("forfeda").checked) {
+		str = str.replace(/ea/g, convarr["ea"]);
+		str = str.replace(/oi/g, convarr["oi"]);
+		str = str.replace(/ui/g, convarr["ui"]);
+		str = str.replace(/ia/g, convarr["ia"]);
+		str = str.replace(/ae/g, convarr["ae"]);
 	}
 
 	// replace the rest
 	while (result = /[ abcdefghilmnopqrstuz]/g.exec(str)) {
-		str = str.replace(result, druidic[result]);
+		str = str.replace(result, convarr[result]);
 	}
 
 	document.getElementById("druidic").value = str;
