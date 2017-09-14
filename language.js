@@ -1,4 +1,4 @@
-var druidic = {
+﻿var druidic = {
 	"^" : "᚛",
 	"$" : "᚜",
 	" " : " ",
@@ -88,9 +88,132 @@ var druidichtml = {
 	"ia": "&#5784;",
 	"ae": "&#5785;",
 	"p" : "&#5786;"
-}
+};
+
+var dwarven = {
+	"f":  "ᚠ",
+	"u":  "ᚢ",
+	"th": "ᚦ",
+	"a":  "ᚨ",
+	"r":  "ᚱ",
+	"k":  "ᚲ",
+	"g":  "ᚷ",
+	"w":  "ᚹ",
+	"h":  "ᚺ",
+	"n":  "ᚾ",
+	"i":  "ᛁ",
+	"j":  "ᛃ",
+	"ae": "ᛇ",
+	"æ":  "ᛇ",
+	"p":  "ᛈ",
+	"z":  "ᛉ",
+	"s":  "ᛊ",
+	"t":  "ᛏ",
+	"b":  "ᛒ",
+	"e":  "ᛖ",
+	"m":  "ᛗ",
+	"l":  "ᛚ",
+	"ng": "ᛜ",
+	"d":  "ᛞ",
+	"o":  "ᛟ",
+
+	"ᚠ": "f",
+	"ᚢ": "u",
+	"ᚦ": "th",
+	"ᚨ": "a",
+	"ᚱ": "r",
+	"ᚲ": "k",
+	"ᚷ": "g",
+	"ᚹ": "w",
+	"ᚺ": "h",
+	"ᚾ": "n",
+	"ᛁ": "i",
+	"ᛃ": "j",
+	"ᛇ": "æ",
+	"ᛈ": "p",
+	"ᛉ": "z",
+	"ᛊ": "s",
+	"ᛏ": "t",
+	"ᛒ": "b",
+	"ᛖ": "e",
+	"ᛗ": "m",
+	"ᛚ": "l",
+	"ᛜ": "ng",
+	"ᛞ": "d",
+	"ᛟ": "o"
+};
+
+var dwarvenhtml = {
+	"f":  "&#5792;",
+	"u":  "&#5794;",
+	"th": "&#5798;",
+	"a":  "&#5800;",
+	"r":  "&#5809;",
+	"k":  "&#5810;",
+	"g":  "&#5815;",
+	"w":  "&#5817;",
+	"h":  "&#5818;",
+	"n":  "&#5822;",
+	"i":  "&#5825;",
+	"j":  "&#5827;",
+	"ae": "&#5831;",
+	"æ":  "&#5831;",
+	"p":  "&#5832;",
+	"z":  "&#5833;",
+	"s":  "&#5834;",
+	"t":  "&#5839;",
+	"b":  "&#5842;",
+	"e":  "&#5846;",
+	"m":  "&#5847;",
+	"l":  "&#5850;",
+	"ng": "&#5852;",
+	"d":  "&#5854;",
+	"o":  "&#5855;"
+};
 
 function translateLatin() {
+	translateLatin2Dwarven();
+	translateLatin2Druidic();
+}
+
+function translateLatin2Dwarven() {
+	var str = document.getElementById("english").value.toLowerCase();
+
+	var convarr = dwarven;
+	if (document.getElementById("html").checked) {
+		console.log(document.getElementById("html").value);
+		convarr = dwarvenhtml;
+	}
+
+	// replace letters not in futhark with the closest thing
+	str = str.replace(/ce/g, "se");
+	str = str.replace(/ci/g, "si");
+	str = str.replace(/cy/g, "sy");
+	str = str.replace(/ch/g, "j");
+	str = str.replace(/c/g,  "k");
+	str = str.replace(/qu/g, "kw");
+	str = str.replace(/q/g,  "k");
+	str = str.replace(/v/g,  "b");
+	str = str.replace(/x/g,  "ks");
+	str = str.replace(/y/g,  "ae");
+
+	// strip out chars that convarr can't handle
+	str = str.replace(/[^\n a-z]*/g, "");
+
+	// replace double letters
+	str = str.replace(/th/g, convarr["th"]);
+	str = str.replace(/ae/g, convarr["ae"]);
+	str = str.replace(/ng/g, convarr["ng"]);
+
+	// replace the rest
+	while (result = /[a-z]/g.exec(str)) {
+		str = str.replace(result, convarr[result]);
+	}
+
+	document.getElementById("dwarven").value = str;
+}
+
+function translateLatin2Druidic() {
 	var str = document.getElementById("english").value.toLowerCase();
 
 	var convarr = druidic;
@@ -145,9 +268,21 @@ function translateDruidic() {
 	}
 
 	document.getElementById("english").value = str;
+	translateLatin2Dwarven();
 }
 
 function translateDwarven() {
+	var str = document.getElementById("dwarven").value.toLowerCase();
 
+	// strip out chars not in dwarven
+	str = str.replace(/[^\n ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ]*/g, "");
+
+	// replace the rest
+	while (result = /[ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ]/g.exec(str)) {
+		str = str.replace(result, dwarven[result]);
+	}
+
+	document.getElementById("english").value = str;
+	translateLatin2Druidic();
 }
 
