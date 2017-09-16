@@ -260,6 +260,9 @@ function translateDruidic() {
 	// strip out chars not in druidic
 	//str = str.replace(/[^\n ᚁᚂᚃᚄᚅᚆᚇᚈᚉᚊᚋᚌᚍᚎᚏᚐᚑᚒᚓᚔᚕᚖᚗᚘᚙᚚ]*/g, "");
 
+	// strip out start/end characters
+	str = str.replace(/[᚛᚜]*/g, "");
+
 	// replace the rest
 	while (result = /[ ᚁᚂᚃᚄᚅᚆᚇᚈᚉᚊᚋᚌᚍᚎᚏᚐᚑᚒᚓᚔᚕᚖᚗᚘᚙᚚ]/g.exec(str)) {
 		str = str.replace(result, druidic[result]);
