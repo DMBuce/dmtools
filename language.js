@@ -193,12 +193,12 @@ function translateLatin2Dwarven() {
 	str = str.replace(/c/g,  "k");
 	str = str.replace(/qu/g, "kw");
 	str = str.replace(/q/g,  "k");
-	str = str.replace(/v/g,  "b");
+	str = str.replace(/v/g,  "f");
 	str = str.replace(/x/g,  "ks");
 	str = str.replace(/y/g,  "ae");
 
 	// strip out chars that convarr can't handle
-	str = str.replace(/[^\n a-z]*/g, "");
+	//str = str.replace(/[^\n a-z]*/g, "");
 
 	// replace double letters
 	str = str.replace(/th/g, convarr["th"]);
@@ -225,13 +225,13 @@ function translateLatin2Druidic() {
 	// replace letters not in ogham with the closest thing
 	str = str.replace(/j/g, "ch");
 	str = str.replace(/k/g, "g");
-	str = str.replace(/v/g, "b");
+	str = str.replace(/v/g, "f");
 	str = str.replace(/w/g, "ui");
 	str = str.replace(/x/g, "cs");
 	str = str.replace(/y/g, "ea");
 
 	// strip out chars that convarr can't handle
-	str = str.replace(/[^\n abcdefghilmnopqrstuz]*/g, "");
+	//str = str.replace(/[^\n a-z]*/g, "");
 
 	// add start/end markers
 	str = str.replace(/^/, convarr["^"]);
@@ -260,7 +260,7 @@ function translateDruidic() {
 	var str = document.getElementById("druidic").value.toLowerCase();
 
 	// strip out chars not in druidic
-	str = str.replace(/[^\n ᚁᚂᚃᚄᚅᚆᚇᚈᚉᚊᚋᚌᚍᚎᚏᚐᚑᚒᚓᚔᚕᚖᚗᚘᚙᚚ]*/g, "");
+	//str = str.replace(/[^\n ᚁᚂᚃᚄᚅᚆᚇᚈᚉᚊᚋᚌᚍᚎᚏᚐᚑᚒᚓᚔᚕᚖᚗᚘᚙᚚ]*/g, "");
 
 	// replace the rest
 	while (result = /[ ᚁᚂᚃᚄᚅᚆᚇᚈᚉᚊᚋᚌᚍᚎᚏᚐᚑᚒᚓᚔᚕᚖᚗᚘᚙᚚ]/g.exec(str)) {
@@ -275,7 +275,7 @@ function translateDwarven() {
 	var str = document.getElementById("dwarven").value.toLowerCase();
 
 	// strip out chars not in dwarven
-	str = str.replace(/[^\n ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ]*/g, "");
+	//str = str.replace(/[^\n ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ]*/g, "");
 
 	// replace the rest
 	while (result = /[ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ]/g.exec(str)) {
