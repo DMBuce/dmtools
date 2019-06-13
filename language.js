@@ -22,9 +22,9 @@
 	"u" : "ᚒ",
 	"e" : "ᚓ",
 	"i" : "ᚔ",
-	"ea": "ᚕ",
+	"y" : "ᚕ",
 	"oi": "ᚖ",
-	"ui": "ᚗ",
+	"w" : "ᚗ",
 	"ia": "ᚘ",
 	"ae": "ᚙ",
 	"p" : "ᚚ",
@@ -50,9 +50,9 @@
 	"ᚒ": "u",
 	"ᚓ": "e",
 	"ᚔ": "i",
-	"ᚕ": "ea",
+	"ᚕ": "y",
 	"ᚖ": "oi",
-	"ᚗ": "ui",
+	"ᚗ": "w",
 	"ᚘ": "ia",
 	"ᚙ": "ae",
 	"ᚚ": "p" 
@@ -224,9 +224,9 @@ function translateLatin2Druidic() {
 	str = str.replace(/j/g, "ch");
 	str = str.replace(/k/g, "g");
 	str = str.replace(/v/g, "f");
-	str = str.replace(/w/g, "ui");
+	//str = str.replace(/w/g, "ui");
 	str = str.replace(/x/g, "cs");
-	str = str.replace(/y/g, "ea");
+	//str = str.replace(/y/g, "ea");
 
 	// strip out chars that convarr can't handle
 	//str = str.replace(/[^\n a-z]*/g, "");
