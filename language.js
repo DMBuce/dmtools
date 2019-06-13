@@ -179,7 +179,6 @@ function translateLatin2Dwarven() {
 
 	var convarr = dwarven;
 	if (document.getElementById("html").checked) {
-		console.log(document.getElementById("html").value);
 		convarr = dwarvenhtml;
 	}
 
@@ -216,7 +215,6 @@ function translateLatin2Druidic() {
 
 	var convarr = druidic;
 	if (document.getElementById("html").checked) {
-		console.log(document.getElementById("html").value);
 		convarr = druidichtml;
 	}
 
