@@ -220,8 +220,8 @@ function translateLatin2Druidic() {
 
 	// replace letters not in ogham with the closest thing
 	str = str.replace(/j/g, "ch");
-	str = str.replace(/k/g, "g");
-	str = str.replace(/v/g, "f");
+	str = str.replace(/k/g, "c");
+	str = str.replace(/v/g, "b");
 	//str = str.replace(/w/g, "ui");
 	str = str.replace(/x/g, "cs");
 	//str = str.replace(/y/g, "ea");
