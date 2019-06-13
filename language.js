@@ -239,9 +239,9 @@ function translateLatin2Druidic() {
 	// replace double letters
 	str = str.replace(/ng/g, convarr["ng"]);
 	if (document.getElementById("forfeda").checked) {
-		str = str.replace(/ea/g, convarr["ea"]);
+		//str = str.replace(/ea/g, convarr["ea"]);
 		str = str.replace(/oi/g, convarr["oi"]);
-		str = str.replace(/ui/g, convarr["ui"]);
+		//str = str.replace(/ui/g, convarr["ui"]);
 		str = str.replace(/ia/g, convarr["ia"]);
 		str = str.replace(/ae/g, convarr["ae"]);
 	}
