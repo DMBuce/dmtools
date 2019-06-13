@@ -245,7 +245,7 @@ function translateLatin2Druidic() {
 	}
 
 	// replace the rest
-	while (result = /[ abcdefghilmnopqrstuz]/g.exec(str)) {
+	while (result = /[ abcdefghilmnopqrstuwyz]/g.exec(str)) {
 		str = str.replace(result, convarr[result]);
 	}
 
