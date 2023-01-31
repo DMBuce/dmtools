@@ -29,27 +29,12 @@ The Difficulty is global, and usually 12 (easy), 15 (medium), or 18 (hard).
 The GM will change the Difficulty as the situation changes.
 The Difficulty is shown to the players at all times.
 
-== Advantage & Training
+== Advantage
 
 A player's character (PC) can have Advantage or Disadvantage on a roll.
 To roll with Advantage, roll two d20s and take the highest roll.
 To roll with Disadvantage, take the lowest roll.
 Advantage cancels Disadvantage.
-
-Training gives you Advantage on rolls related to certain tasks.
-You gain training in one of the following when creating a character.
-
-* **Athletics**: Climbing, leaping, balancing
-* **Stealth**: Sneaking, hiding, disguises
-* **Survival**: Tracking, foraging, navigating wilderness
-* **Thievery**: Tinkering, picking locks and pockets
-
-You can receive additional training from mentors during your adventures.
-In addition to the training above, mentors can train you in:
-
-* **Academics**: History, religion, arcana
-* **Seafaring**: Sailing, swimming, navigation
-* **Witchcraft**: Medicine, herbalism, alchemy
 
 == Inventory
 
@@ -136,11 +121,19 @@ and eat a meal to heal all Grit and one stat.
 
 Assign +0, +1, and +2 to your stats in any order.
 
+Training gives you Advantage on rolls related to certain tasks.
+Choose training in one of the following.
+
+* **Athletics**: Climbing, leaping, balancing
+* **Stealth**: Sneaking, hiding, disguises
+* **Survival**: Tracking, foraging, navigating wilderness
+* **Thievery**: Tinkering, picking locks and pockets
+
 Your starting gear is:
 
 * A melee weapon
 * A ranged weapon
-* An iron shirt
+* A chainmail shirt
 * A shield
 * 3 Gear
 * 3 Supplies
@@ -208,6 +201,19 @@ Here are a couple more example stat lines.
 = Optional Rules
 
 //== Character Creation: Heirlooms & Legacies
+
+== Character Creation: Additional Training
+
+You can receive additional training from mentors during your adventures.
+
+In addition to the training above,
+the GM may make additional training available
+at character creation and/or through mentorship.
+For example,
+
+* **Academics**: History, religion, arcana
+* **Seafaring**: Sailing, swimming, navigation
+* **Witchcraft**: Medicine, herbalism, alchemy
 
 //== Combat Addition: Critical Successes and/or Failures
 
