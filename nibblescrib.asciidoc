@@ -22,6 +22,9 @@ Knave.
 If the Game Master (GM) asks for a STR, DEX, or WIL roll,
 roll a d20, add the appropriate stat bonus,
 and compare it to the Difficulty.
+A roll above the Difficulty is a success,
+which means you accomplish what you set out to do.
+An unsuccessful roll will be interpreted and described by the GM.
 
 == Difficulty
 
@@ -35,6 +38,7 @@ A player's character (PC) can have Advantage or Disadvantage on a roll.
 To roll with Advantage, roll two d20s and take the highest roll.
 To roll with Disadvantage, take the lowest roll.
 Advantage cancels Disadvantage.
+Only roll one d20 if you have both.
 
 == Inventory
 
@@ -46,14 +50,6 @@ You have 16 item slots.
 * 8 pack slots for items that take an action to find
 
 Bulky items take up two slots. 
-Your starting gear is:
-
-* A melee weapon
-* A ranged weapon
-* An iron shirt
-* A shield
-* 3 Gear
-* 3 Supplies
 
 = Combat
 
