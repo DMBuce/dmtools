@@ -19,9 +19,6 @@ Knave.
 * **Dexterity (DEX)**: agility, reflexes, and swiftness
 * **Will (WIL)**: force of personality and persuasion
 
-Assign +0, +1, and +2 to your stats in any order
-when creating a character.
-
 If the Game Master (GM) asks for a STR, DEX, or WIL roll,
 roll a d20, add the appropriate stat bonus,
 and compare it to the Difficulty.
@@ -40,16 +37,19 @@ To roll with Disadvantage, take the lowest roll.
 Advantage cancels Disadvantage.
 
 Training gives you Advantage on rolls related to certain tasks.
-You gain training at level 1 and each odd level after.
-Choose your training from the following:
+You gain training in one of the following when creating a character.
 
 * **Athletics**: Climbing, leaping, balancing
-//* **Education**: History, religion, arcana
-//* **Seafaring**: Sailing, swimming, navigation
 * **Stealth**: Sneaking, hiding, disguises
 * **Survival**: Tracking, foraging, navigating wilderness
 * **Thievery**: Tinkering, picking locks and pockets
-//* **Witchcraft**: Medicine, herbalism, alchemy
+
+You can receive additional training from mentors during your adventures.
+In addition to the training above, mentors can train you in:
+
+* **Academics**: History, religion, arcana
+* **Seafaring**: Sailing, swimming, navigation
+* **Witchcraft**: Medicine, herbalism, alchemy
 
 == Inventory
 
@@ -72,56 +72,6 @@ Your starting gear is:
 
 = Combat
 
-Two options for tactical combat are provided,
-Attrition & Gritty Combat,
-are provided. The GM should choose one for the campaign or session.
-
-A third, narrative combat option is provided for quickly resolving low-stakes
-or uninteresting battles.
-
-= Attrition Combat
-
-== Armor & Health
-
-You start with 4 max health and 0 Armor.
-Shields, chestplates, leggings, and similar protection
-provide 1 Armor each, to a maximum of 3.
-Armor reduces damage.
-
-== Damage & Attacking
-
-* **Unarmed**: Fists deal **d4** damage
-* **Weapon**: Weapons deal **d6** damage
-* **Magic**: Magic deals **d8** damage
-* **Ultimate**: Exceptional attacks add **d12** to the damage
-
-To attack, roll damage and subtract the target's Armor.
-The target loses that much health.
-
-At 0 health, you fall unconscious.
-When you reach negative health, you die in 1d4 turns.
-
-When you die, you create a new character that inherits the dead character's
-belongings, and the GM will introduce your new character as soon as possible.
-
-== Turns
-
-The player to the GM's left goes first and play proceeds to the right.
-
-== Healing
-
-Once per hour, you can rest for 5 minutes
-and drink fresh water to heal 2 health.
-
-Once per day, you can take a dose of medicine
-to heal 2 health.
-
-Once per day in a safe place,
-you can sleep for 6 hours
-and eat a meal to heal all health.
-
-= Gritty Combat
-
 == Attacking & Defending
 
 PCs roll STR when attacking in melee
@@ -132,13 +82,13 @@ and finesse weapons use DEX.
 Some magic attacks use WIL instead of STR or DEX.
 
 PCs roll DEX when dodging an attack
-and STR when blocking an attack with armor.
+and STR when blocking an attack with a shield or armor.
 If a dodge or block attempt is unsuccessful,
 the PC takes damage.
 
 == Damage
 
-On a hit, the target chooses a stat to take damage.
+On a hit, a stat of the target's choice takes damage.
 Rolls made with damaged stats have Disadvantage.
 Rolls against enemies have Advantage if the target has a damaged stat.
 
@@ -146,8 +96,9 @@ If you take damage while all your stats are already damaged,
 you fall unconscious.
 If you take damage while unconscious, you die.
 
-When you die, you create a new character that inherits the dead character's
-belongings, and the GM will introduce your new character as soon as possible.
+When you die,
+you create a new character that inherits the dead character's belongings,
+and the GM will have your new character rejoin as soon as possible.
 
 == Grit
 
@@ -171,22 +122,19 @@ Once per day in a safe place,
 you can sleep for 6 hours
 and eat a meal to heal all Grit and one stat.
 
-= Narrative Combat
-
-The players describe how they contribute to the fight.
-The GM asks each of them to roll STR, DEX, or WIL
-depending on what they described.
-Each PC takes damage from an enemy unless they beat the DC.
-
-The player with the highest successful roll describes how the fight was won.
-If no roll was a success, the GM describes the outcome of the fight.
+//= Narrative Combat
+//
+//The players describe how they contribute to the fight.
+//The GM asks each of them to roll STR, DEX, or WIL
+//depending on what they described.
+//Each PC takes damage from an enemy unless they beat the Difficulty.
+//
+//The player with the highest successful roll describes how the fight was won.
+//If no roll was a success, the GM describes the outcome of the fight.
 
 = Character Creation
 
 Assign +0, +1, and +2 to your stats in any order.
-
-If the GM is using the Attrition Combat rules,
-you start with 4 max health, and your starting gear provides 2 armor.
 
 Your starting gear is:
 
@@ -197,7 +145,7 @@ Your starting gear is:
 * 3 Gear
 * 3 Supplies
 
-The GM may have you start with an Heirloom or Legacy.
+//The GM may have you start with an Heirloom or Legacy.
 
 == Progression
 
@@ -206,34 +154,109 @@ The GM may have you start with an Heirloom or Legacy.
 | Level | Features Gained
 
 | 2
-| +1 Grit or +2 max health
+| +1 Grit
 
 | 3
 | +1 to a stat bonus
 
 | 4
-| +1 Grit or +2 max health
+| +1 Grit
 
 | 5
 | +1 to a stat bonus
 
 | 6
-| +1 Grit or +2 max health
+| +1 Grit
 |===
 
 //= Magic
-//
-//= GMing
-//
-//== Assigning Difficulty
-//
-//== Optional Rules
-//
-//=== Critical Successes and/or Failures
-//
-//== Monsters
-//
+
+= GMing
+
+== Managing Difficulty
+
+This game has a single Difficulty (DC) that varies as the PCs' situation changes.
+It is set by the GM and shown to the players at all times.
+
+This is done to speed up gameplay and make it easier to run the game.
+The GM doesn't have to think of a DC for every action a player takes or
+monster they might encounter.
+Instead, the GM simply thinks of a DC
+representing how hard or easy the current scenario is,
+and displays it in a prominent location with a post-it or a d20.
+
+A simple rule of thumb is to use 12 for easy Difficulty,
+15 for medium Difficulty, and 18 for hard Difficulty.
+
+== Monsters
+
+This game is designed to make it easy to create monsters on the fly.
+Since PCs roll to attack and also to defend, monsters never need to roll.
+Since PCs always roll against the Difficulty,
+monsters never need a "target number" or "difficulty class" to roll against.
+
+A monster's stat line is just its name and any abilities it has.
+A bear's stat block is simply "Bear".
+Here are a couple more example stat lines.
+
+* **Vampire**: Deals damage to STR before other stats, and gains Advantage for
+  1 round when dealing damage
+* **Troll**: Heals one stat at the end of its turn
+
 //== Loot
+
+= Optional Rules
+
+//== Character Creation: Heirlooms & Legacies
+
+//== Combat Addition: Critical Successes and/or Failures
+
+== Combat Alternative: Hit Points
+
+The following are alternative rules for combat
+based on health and damage dice instead of Grit and stat damage.
+
+=== Armor & Health
+
+You start with 4 max health and 0 Armor
+(2 Armor with the starting gear).
+Instead of Grit, you gain +2 max health at even levels.
+Shields, chestplates, leggings, and similar protection
+provide 1 Armor each, to a maximum of 3.
+Armor reduces damage.
+
+=== Damage & Attacking
+
+To attack, roll damage and subtract the target's Armor.
+The target loses that much health.
+
+* **Unarmed**: Fists deal **d4** damage
+* **Weapon**: Weapons deal **d6** damage
+* **Magic**: Magic deals **d8** damage
+* **Ultimate**: Exceptional attacks add **d12** to the damage
+
+At 0 health, you fall unconscious.
+When you reach negative health,
+you die in 1d4 turns unless stabilized with healing.
+
+When you die, you create a new character that inherits the dead character's
+belongings, and the GM will introduce your new character as soon as possible.
+
+=== Turns
+
+The player to the GM's left goes first and play proceeds to the right.
+
+=== Healing
+
+Once per hour, you can rest for 5 minutes
+and drink fresh water to heal 2 health.
+
+Once per day, you can take a dose of medicine
+to heal 2 health.
+
+Once per day in a safe place,
+you can sleep for 6 hours
+and eat a meal to heal all health.
 
 
 
