@@ -11,15 +11,70 @@ Cairn,
 and
 Knave.
 
-= Rules Summary
+= Character Creation
 
-== Stats
+== Choose Stats
 
-Player characters (PCs) have three stats:
+Assign +0, +1, and +2 to STR, DEX, and WIL in any order.
 
 * **Strength (STR)**: brawn, toughness, and vigor
 * **Dexterity (DEX)**: agility, reflexes, and swiftness
 * **Will (WIL)**: force of personality and persuasion
+
+== Choose Grit or Training
+
+Choose either 1 Grit or Training.
+
+Grit lets you absorb damage, as described in the Combat section.
+
+Training gives you Advantage on rolls related to certain tasks.
+Choose training in one of the following.
+
+* **Athletics**: Climbing, leaping, balancing
+* **Stealth**: Sneaking, hiding, disguises
+* **Survival**: Tracking, foraging, navigating wilderness
+* **Thievery**: Tinkering, picking locks and pockets
+
+== Choose Starting Equipment
+
+Your starting equipment is:
+
+* A melee weapon of your choice
+* A ranged weapon of your choice
+* A shield and chainmail shirt or a random spellbook
+* 3 Gear
+* 3 Supplies
+
+Roll or choose your gear and supplies using the tables in the Equipment
+section.
+
+//The GM may have you start with an Heirloom or Legacy.
+
+== Progression
+
+[cols="1,1"]
+|===
+| Level | Features Gained
+
+| 2
+| +1 Grit
+
+| 3
+| +1 to a stat bonus
+
+| 4
+| +1 Grit
+
+| 5
+| +1 to a stat bonus
+
+| 6
+| +1 Grit
+|===
+
+= Rules Summary
+
+== Rolling Stats
 
 If the Game Master (GM) asks for a STR, DEX, or WIL roll,
 roll a d20, add the appropriate stat bonus,
@@ -98,7 +153,7 @@ They can choose one Grit to take damage instead of a stat.
 == Healing
 
 Once per hour, you can rest for 5 minutes
-and drink fresh water or bandage themself to heal one Grit.
+and drink fresh water or bandage yourself to heal one Grit.
 
 Once per day, you can bandage a wound or take a dose of medicine
 to heal one Grit.
@@ -117,54 +172,110 @@ and eat a meal to heal all Grit and one stat.
 //The player with the highest successful roll describes how the fight was won.
 //If no roll was a success, the GM describes the outcome of the fight.
 
-= Character Creation
+= Equipment
 
-Assign +0, +1, and +2 to STR, DEX, and MND in any order.
+**Supplies**
 
-Training gives you Advantage on rolls related to certain tasks.
-Choose training in one of the following.
+# Antitoxin
+# Arrows
+# Bear Repellent
+# Caltrops
+# Glue
+# Grease
+# Incense
+# Ink
+# Nails
+# Oil
+# Rations
+# Salt
+# Sealant
+# Soap
+# Tar
+# Torch
+# Waterskin
+# Medicine
+# Vial of Acid
+# Vial of Poison
 
-* **Athletics**: Climbing, leaping, balancing
-* **Stealth**: Sneaking, hiding, disguises
-* **Survival**: Tracking, foraging, navigating wilderness
-* **Thievery**: Tinkering, picking locks and pockets
+//TODO: split out dangerous/exotic materials
 
-Your starting gear is:
+**Gear**
 
-* A melee weapon
-* A ranged weapon
-* A chainmail shirt
-* A shield
-* 3 Gear
-* 3 Supplies
+# Bear Trap
+# Bucket
+# Chain
+# Crowbar
+# Dowsing Rod
+# Grappling Hook
+# Hammer
+# Horn
+# Lockpicks
+# Manacles
+# Metal File
+# Net
+# Pick
+# Pitons
+# Pole
+# Rope
+# Saw
+# Shovel
+# Spyglass
+# Tinderbox
 
-//The GM may have you start with an Heirloom or Legacy.
+**Weapons & Armor**
 
-== Progression
-
-[cols="1,1"]
-|===
-| Level | Features Gained
-
-| 2
-| +1 Grit
-
-| 3
-| +1 to a stat bonus
-
-| 4
-| +1 Grit
-
-| 5
-| +1 to a stat bonus
-
-| 6
-| +1 Grit
-|===
+# Bow
+# Crossbow
+# Sling
+# Axe
+# Claymore
+# Dagger
+# Flail
+# Glaive
+# Halberd
+# Longsword
+# Mace
+# Short Sword
+# Spear
+# War Hammer
+# Brigandine
+# Chainmail
+# Gambeson
+# Helmet
+# Platemail
+# Shield
 
 //= Magic
 
 = GMing
+
+== Estimating Costs
+
+To quickly estimate item costs,
+use the following table.
+
+[cols="1,1"]
+|===
+| Cost per syllable | Type of item
+
+| 1sp
+| Food, supplies
+
+| 1gp
+| Gear
+
+| 2gp
+| Livestock
+
+| 10gp
+| Melee weapons, luxury items
+
+| 20gp
+| Ranged weapons
+
+| 100gp
+| Dangerous & exotic items
+|===
 
 == Managing Difficulty
 
