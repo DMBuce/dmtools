@@ -1,4 +1,4 @@
-= Nibblescrib
+= Scribble Nib
 
 A tabletop RPG
 //named after a magic card and
@@ -55,18 +55,20 @@ Bulky items take up two slots.
 
 = Combat
 
-=== Turns
+== Turns
 
 The player to the GM's left goes first and play proceeds to the right.
 
-== Attacking & Defending
+== Attacking
 
 PCs roll STR when attacking in melee
 and DEX when attacking at range.
-The GM may rule that thrown weapons use STR
-and finesse weapons use DEX.
-
 Some magic attacks use WIL instead of STR or DEX.
+
+== Defending
+
+Enemies may attack on the GM's turn.
+When an enemy attacks, the PC can choose to dodge or block.
 
 PCs roll DEX when dodging an attack
 and STR when blocking an attack with a shield or armor.
@@ -77,27 +79,28 @@ the PC takes damage.
 
 On a hit, a stat of the target's choice takes damage.
 Rolls made with damaged stats have Disadvantage.
-Rolls against enemies have Advantage if the target has a damaged stat.
+Rolls that PCs make against enemies have Advantage
+if the target has a damaged stat.
 
-If a PC takes damage while all their stats are already damaged,
+If a PC or enemy takes damage while all their stats are already damaged,
 they fall unconscious.
-If a PC takes damage while unconscious, they die.
+Damage taken while unconscious means instant death.
 
 When a PC dies,
 the player can create a new character or take over a hireling.
-They rejoin the group immediately to reduce downtime.
+To avoid downtime, they rejoin the group immediately.
 
 == Grit
 
-Starting at 2nd level, you have Grit.
-You can choose one Grit to take damage instead of a stat.
+Starting at 2nd level, PCs have Grit.
+They can choose one Grit to take damage instead of a stat.
 
 == Healing
 
-Once per hour, you can rest for 5 minutes
-and drink fresh water to heal one Grit.
+Once per hour, a PC can rest for 5 minutes
+and drink fresh water or bandage themself to heal one Grit.
 
-Once per day, you can take a dose of medicine
+Once per day, a PC can bandage a wound or take a dose of medicine
 to heal one Grit.
 
 Once per day in a safe place,
@@ -189,9 +192,9 @@ A monster's stat line is just its name and any abilities it has.
 A bear's stat block is simply "Bear".
 Here are a couple more example stat lines.
 
-* **Vampire**: Deals damage to STR before other stats, and gains Advantage for
-  1 round when dealing damage
-* **Troll**: Heals one stat at the end of its turn
+* **Vampire**: Deals damage to STR before other stats. Gains Advantage to STR
+  for 1 round when dealing damage.
+* **Troll**: Heals one stat at the end of its turn.
 
 //== Loot
 
@@ -253,10 +256,10 @@ and drink fresh water to heal 2 health.
 Once per day, you can take a dose of medicine
 to heal 2 health.
 
-Once per day in a safe place,
-you can sleep for 6 hours
-and eat a meal to heal all health.
-
+Once per day,
+you can eat a meal
+and sleep in a safe place for 6 hours
+to heal all health.
 
 
 
