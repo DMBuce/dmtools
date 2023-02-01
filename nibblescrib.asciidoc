@@ -15,6 +15,8 @@ Knave.
 
 == Stats
 
+Player characters (PCs) have three stats:
+
 * **Strength (STR)**: brawn, toughness, and vigor
 * **Dexterity (DEX)**: agility, reflexes, and swiftness
 * **Will (WIL)**: force of personality and persuasion
@@ -34,7 +36,7 @@ The Difficulty is shown to the players at all times.
 
 == Advantage
 
-A player's character (PC) can have Advantage or Disadvantage on a roll.
+A player's character can have Advantage or Disadvantage on a roll.
 To roll with Advantage, roll two d20s and take the highest roll.
 To roll with Disadvantage, take the lowest roll.
 Advantage cancels Disadvantage.
@@ -52,6 +54,10 @@ You have 16 item slots.
 Bulky items take up two slots. 
 
 = Combat
+
+=== Turns
+
+The player to the GM's left goes first and play proceeds to the right.
 
 == Attacking & Defending
 
@@ -73,23 +79,18 @@ On a hit, a stat of the target's choice takes damage.
 Rolls made with damaged stats have Disadvantage.
 Rolls against enemies have Advantage if the target has a damaged stat.
 
-If you take damage while all your stats are already damaged,
-you fall unconscious.
-If you take damage while unconscious, you die.
+If a PC takes damage while all their stats are already damaged,
+they fall unconscious.
+If a PC takes damage while unconscious, they die.
 
-When you die,
-you create a new character that inherits the dead character's belongings,
-and the GM will have your new character rejoin as soon as possible.
+When a PC dies,
+the player can create a new character or take over a hireling.
+They rejoin the group immediately to reduce downtime.
 
 == Grit
 
 Starting at 2nd level, you have Grit.
 You can choose one Grit to take damage instead of a stat.
-
-== Turns
-
-Players take free-form turns.
-After each player turn, one enemy takes a turn.
 
 == Healing
 
@@ -243,10 +244,6 @@ you die in 1d4 turns unless stabilized with healing.
 
 When you die, you create a new character that inherits the dead character's
 belongings, and the GM will introduce your new character as soon as possible.
-
-=== Turns
-
-The player to the GM's left goes first and play proceeds to the right.
 
 === Healing
 
