@@ -175,7 +175,7 @@ use the following table.
 
 // Food: 1-5gp
 
-**Supplies:** *1-5gp*
+**Supplies:** _1-5gp_
 
 . Antitoxin
 . Arrows
@@ -202,7 +202,7 @@ use the following table.
 
 //TODO: split out dangerous/exotic materials
 
-**Gear:** *5-10gp*
+**Gear:** _5-10gp_
 
 . Bear Trap
 . Bucket
@@ -225,7 +225,7 @@ use the following table.
 . Spyglass
 . Tinderbox
 
-**Weapons & Armor:** *10-50gp unless otherwise noted*
+**Weapons & Armor:** _10-50gp unless otherwise noted_
 
 . Bow
 . Crossbow
