@@ -284,8 +284,8 @@ monsters never need a "target number" or "difficulty class" to roll against.
 They also don't need numbers assigned to their stats.
 
 A monster's stat block is just its name and any abilities it has.
-A bear's stat line is simply "Bear".
-Here are a couple more example stat lines.
+A bear's stat block is simply "Bear".
+Here are a few more example stat blocks.
 
 **Vampire**::
 Deals damage to STR before other stats.
