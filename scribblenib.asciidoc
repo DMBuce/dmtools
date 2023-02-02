@@ -21,27 +21,38 @@ Assign +0, +1, and +2 to STR, DEX, and WIL in any order.
 * **Dexterity (DEX)**: agility, reflexes, and swiftness
 * **Will (WIL)**: force of personality and persuasion
 
-== Choose Grit or Training
+You also have a baseline +0 **Armor**,
+which will increase when you select your starting gear.
 
-Choose either 1 Grit or Training.
-
-Grit lets you absorb damage, as described in the Combat section.
+== Choose Training
 
 Training gives you Advantage on rolls related to certain tasks.
-Choose training in one of the following.
+Choose training in one of the following areas.
 
 * **Athletics**: Climbing, leaping, balancing
 * **Stealth**: Sneaking, hiding, disguises
 * **Survival**: Tracking, foraging, navigating wilderness
 * **Thievery**: Tinkering, picking locks and pockets
 
+== Inventory
+
+You have 16 item slots.
+
+* 2 hand slots for items you are holding and can use
+* 2 strap slots for items that can be freely swapped with hand slots
+* 4 body slots for armor and worn magic items
+* 8 pack slots for items that take an action to find
+
+Large items such as two-handed weapons take up two slots.
+
 == Choose Starting Equipment
 
 Your starting equipment is:
 
-* A melee weapon of your choice
-* A ranged weapon of your choice
-* A shield and chainmail shirt or a random spellbook
+* Melee weapon of your choice
+* Ranged weapon of your choice
+* Leather Armor (+1 Armor) or a random spellbook
+* Shield (+1 Armor)
 * 3 Gear
 * 3 Supplies
 
@@ -97,17 +108,6 @@ To roll with Disadvantage, take the lowest roll.
 Advantage cancels Disadvantage.
 Only roll one d20 if you have both.
 
-== Inventory
-
-You have 16 item slots.
-
-* 2 hand slots for items you are holding and can use
-* 2 strap slots for items that can be freely swapped with hand slots
-* 4 body slots for armor and worn magic items
-* 8 pack slots for items that take an action to find
-
-Bulky items take up two slots. 
-
 = Combat
 
 == Turns
@@ -123,16 +123,12 @@ Some magic attacks use WIL instead of STR or DEX.
 == Defending
 
 Enemies may attack on the GM's turn.
-When an enemy attacks, the PC can choose to dodge or block.
-
-PCs roll DEX when dodging an attack
-and STR when blocking an attack with a shield or armor.
-If a dodge or block attempt is unsuccessful,
-the PC takes damage.
+PCs roll Armor to defend against attacks.
+If the attempt is unsuccessful, the PC takes damage.
 
 == Damage
 
-On a hit, a stat of the target's choice takes damage.
+On a hit, the target chooses their STR, DEX, or WIL stat to take damage.
 Rolls made with damaged stats have Disadvantage.
 Rolls that PCs make against enemies have Advantage
 if the target has a damaged stat.
@@ -238,12 +234,12 @@ and eat a meal to heal all Grit and one stat.
 # Short Sword
 # Spear
 # War Hammer
-# Brigandine
-# Chainmail
-# Gambeson
-# Helmet
-# Platemail
-# Shield
+# Shield (+1 armor)
+# Brigandine (+1 armor)
+# Leather Armor (+1 armor)
+# Padded Armor (+1 armor)
+# Chainmail (+2 armor)
+# Platemail (+2 armor)
 
 //= Magic
 
