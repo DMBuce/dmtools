@@ -17,9 +17,9 @@ Knave.
 
 Assign +0, +1, and +2 to STR, DEX, and WIL in any order.
 
-* **Strength (STR)**: brawn, toughness, and vigor
-* **Dexterity (DEX)**: agility, reflexes, and swiftness
-* **Will (WIL)**: force of personality and persuasion
+* **Strength (STR):** brawn, toughness, and vigor
+* **Dexterity (DEX):** agility, reflexes, and swiftness
+* **Will (WIL):** force of personality and persuasion
 
 You also have a baseline +0 **Armor**,
 which will increase when you select your starting gear.
@@ -29,10 +29,10 @@ which will increase when you select your starting gear.
 Training gives you Advantage on rolls related to certain tasks.
 Choose training in one of the following areas.
 
-* **Athletics**: Climbing, leaping, balancing
-* **Stealth**: Sneaking, hiding, disguises
-* **Survival**: Tracking, foraging, navigating wilderness
-* **Thievery**: Tinkering, picking locks and pockets
+* **Athletics:** Climbing, leaping, balancing
+* **Stealth:** Sneaking, hiding, disguises
+* **Survival:** Tracking, foraging, navigating wilderness
+* **Thievery:** Tinkering, picking locks and pockets
 
 == Inventory
 
@@ -175,7 +175,7 @@ use the following table.
 
 // Food: 1-5gp
 
-**Supplies**: 1-5gp
+**Supplies:** *1-5gp*
 
 . Antitoxin
 . Arrows
@@ -202,7 +202,7 @@ use the following table.
 
 //TODO: split out dangerous/exotic materials
 
-**Gear**: 5-10gp
+**Gear:** *5-10gp*
 
 . Bear Trap
 . Bucket
@@ -225,7 +225,7 @@ use the following table.
 . Spyglass
 . Tinderbox
 
-**Weapons & Armor**: 10-50gp unless otherwise noted
+**Weapons & Armor:** *10-50gp unless otherwise noted*
 
 . Bow
 . Crossbow
@@ -282,9 +282,9 @@ A monster's stat line is just its name and any abilities it has.
 A bear's stat line is simply "Bear".
 Here are a couple more example stat lines.
 
-* **Vampire**: Deals damage to STR before other stats. Gains Advantage to STR
+* **Vampire:** Deals damage to STR before other stats. Gains Advantage to STR
   for 1 round when dealing damage.
-* **Troll**: Heals one stat at the end of its turn.
+* **Troll:** Heals one stat at the end of its turn.
 
 //== Loot
 
@@ -299,9 +299,9 @@ the GM may wish to make the following training available
 at character creation
 or through mentors that the PCs meet during their adventures.
 
-* **Academics**: History, religion, arcana
-* **Seafaring**: Sailing, swimming, navigation
-* **Witchcraft**: Medicine, herbalism, alchemy
+* **Academics:** History, religion, arcana
+* **Seafaring:** Sailing, swimming, navigation
+* **Witchcraft:** Medicine, herbalism, alchemy
 
 //== Combat Addition: Critical Successes and/or Failures
 
@@ -324,10 +324,10 @@ Armor reduces damage.
 To attack, roll damage and subtract the target's Armor.
 The target loses that much health.
 
-* **Unarmed**: Fists deal **d4** damage
-* **Weapon**: Weapons deal **d6** damage
-* **Magic**: Magic deals **d8** damage
-* **Ultimate**: Exceptional attacks add **d12** to the damage
+* **Unarmed:** Fists deal **d4** damage
+* **Weapon:** Weapons deal **d6** damage
+* **Magic:** Magic deals **d8** damage
+* **Ultimate:** Exceptional attacks add **d12** to the damage
 
 At 0 health, a PC falls unconscious.
 When a PC reaches negative health,
@@ -392,9 +392,9 @@ to heal all health.
 //
 // //There are also some optional stats that the GM may or may not use:
 // //
-// //* **Attack (ATK)**: Ability to inflict harm
-// //* **Armor (AMR)**: Protection against physical attacks
-// //* **Health (HTH)**: Capacity for taking damage
+// //* **Attack (ATK):** Ability to inflict harm
+// //* **Armor (AMR):** Protection against physical attacks
+// //* **Health (HTH):** Capacity for taking damage
 //
 //To make a stat roll,
 //roll a twenty-sided die (d20) and add your stat bonus.
@@ -484,22 +484,22 @@ to heal all health.
 //CoM
 //* Convice - diplomacy
 //
-//**Go for the eyes**:
+//**Go for the eyes:**
 //When you attack a specific body part in melee,
 //make a STR roll.
 //If you roll greater than the enemy's Difficulty,
 //you wound that body part.
 //
-//**Aim for the heart**:
+//**Aim for the heart:**
 //When you shoot at an enemy's limb or vital organ,
 //make a DEX roll.
 //If you roll above
 //
-//**???**:
+//**???:**
 //When your safety is at risk or there's something on the line,
 //roll
 //
-//**???**:
+//**???:**
 //When you aid another player character,
 //roll
 //If you exceed the room difficulty,
