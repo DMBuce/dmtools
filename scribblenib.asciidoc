@@ -280,25 +280,26 @@ A simple rule of thumb is to use 12 for easy Difficulty,
 This game is designed to make it easy to create monsters on the fly.
 Since PCs roll to attack and also to defend, monsters never need to roll.
 Since PCs always roll against the Difficulty,
-monsters never need a "target number" or "difficulty class" to roll against.
-They also don't need numbers assigned to their stats.
+monsters never need a monster-specific "target number" or "difficulty class" to roll against.
+For the same reason, they also don't need numbers assigned to their stats.
 
-A monster's stat block is just its name and any abilities it has.
-A bear's stat block is simply "Bear".
+A monster's stat block is just its name, number of stats, Grit,
+and any abilities it has.
+A bear's stat block is simply "Bear (3 stats)".
 Here are a few more example stat blocks.
 
-**Vampire**::
+**Vampire** (3 stats)::
 Deals damage to STR before other stats.
 Gains Advantage to STR for 1 round when dealing damage with its bite.
 
-**Troll**::
+**Troll** (3 stats, 1 Grit)::
 Regrows lost limbs and heals one stat at the end of its turn.
 
-**Hydra**::
-The stumps of any heads severed by non-fire damage
-grow into two new heads at the end of its turn,
-healing the stat or Grit of the original head
-and gaining one Grit.
+//**Hydra** (3 stats, 1 Grit)::
+//The stumps of any heads severed by non-fire damage
+//grow into two new heads at the end of its turn,
+//healing the stat or Grit of the original head
+//and gaining one Grit.
 
 //== Loot
 
