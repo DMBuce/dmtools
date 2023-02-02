@@ -11,17 +11,19 @@ Cairn,
 and
 Knave.
 
+// TODO: TOC
+
 = Character Creation
 
 == Choose Stats
 
-Assign +0, +1, and +2 to STR, DEX, and WIL in any order.
+Assign +0, +1, and +2 to your stats in any order.
 
 * **Strength (STR):** brawn, toughness, and vigor
 * **Dexterity (DEX):** agility, reflexes, and swiftness
 * **Will (WIL):** force of personality and persuasion
 
-You also have a baseline +0 **Armor**,
+You also have a base **Armor** of +0,
 which will increase when you select your starting gear.
 
 == Choose Training
@@ -51,7 +53,7 @@ Your starting equipment is:
 
 * Melee weapon of your choice
 * Ranged weapon of your choice
-* Leather Armor (+1 Armor) or a random spellbook
+* Leather armor (+1 Armor) or a random spellbook
 * Shield (+1 Armor)
 * 3 Gear
 * 3 Supplies
@@ -85,7 +87,7 @@ section.
 
 = Rules Summary
 
-== Rolling Stats
+== Stat Rolls
 
 If the Game Master (GM) asks for a STR, DEX, or WIL roll,
 roll a d20, add the appropriate stat bonus,
@@ -96,15 +98,15 @@ An unsuccessful roll will be interpreted and described by the GM.
 
 == Difficulty
 
-The Difficulty is global, and usually 12 (easy), 15 (medium), or 18 (hard).
-The GM will change the Difficulty as the situation changes.
+The GM sets a global Difficulty and adjusts it as the situation changes.
 The Difficulty is shown to the players at all times.
 
 == Advantage
 
-A player's character can have Advantage or Disadvantage on a roll.
+A player's character (PC) can have Advantage or Disadvantage on a roll.
 To roll with Advantage, roll two d20s and take the highest roll.
 To roll with Disadvantage, take the lowest roll.
+
 Advantage cancels Disadvantage.
 Only roll one d20 if you have both.
 
@@ -148,10 +150,11 @@ They can choose one Grit to take damage instead of a stat.
 
 == Healing
 
-Once per hour, you can rest for 5 minutes
-and drink fresh water or bandage yourself to heal one Grit.
+Once per hour, you can catch your breath for 5 minutes
+and drink fresh water to heal one Grit.
 
-Once per day, you can bandage a wound or take a dose of medicine
+Once per day, you can tend to your health
+(bandage a wound, take a dose of medicine, etc.)
 to heal one Grit.
 
 Once per day in a safe place,
@@ -169,9 +172,6 @@ and eat a meal to heal all Grit and one stat.
 //If no roll was a success, the GM describes the outcome of the fight.
 
 = Equipment
-
-To quickly estimate item costs,
-use the following table.
 
 // Food: 1-5gp
 
@@ -239,14 +239,14 @@ use the following table.
 . Short Sword
 . Spear
 . War Hammer
-. Shield (+1 armor)
-. Helmet (+1 armor)
-. Gambeson (+1 armor)
-. Brigandine (+1 armor)
-. Padded Armor (+1 armor)
-. Leather Armor (+1 armor)
-. Chainmail (+2 armor, 400gp)
-. Platemail (+3 armor, 1000gp)
+. Shield (+1 Armor)
+. Helmet (+1 Armor)
+. Gambeson (+1 Armor)
+. Brigandine (+1 Armor)
+. Padded Armor (+1 Armor)
+. Leather Armor (+1 Armor)
+. Chainmail (+2 Armor, 400gp)
+. Platemail (+3 Armor, 1000gp)
 
 // Luxury Items: 50-100gp
 
@@ -259,7 +259,7 @@ use the following table.
 == Managing Difficulty
 
 This game has a single Difficulty (DC) that varies as the PCs' situation changes.
-It is set by the GM and shown to the players at all times.
+It's set by the GM and shown to the players at all times.
 
 This is done to speed up gameplay and make it easier to run the game.
 The GM doesn't have to think of a DC for every action a player takes or
@@ -277,14 +277,24 @@ This game is designed to make it easy to create monsters on the fly.
 Since PCs roll to attack and also to defend, monsters never need to roll.
 Since PCs always roll against the Difficulty,
 monsters never need a "target number" or "difficulty class" to roll against.
+They also don't need numbers assigned to their stats.
 
-A monster's stat line is just its name and any abilities it has.
+A monster's stat block is just its name and any abilities it has.
 A bear's stat line is simply "Bear".
 Here are a couple more example stat lines.
 
-* **Vampire:** Deals damage to STR before other stats. Gains Advantage to STR
-  for 1 round when dealing damage.
-* **Troll:** Heals one stat at the end of its turn.
+**Vampire**::
+Deals damage to STR before other stats.
+Gains Advantage to STR for 1 round when dealing damage with its bite.
+
+**Troll**::
+Regrows lost limbs and heals one stat at the end of its turn.
+
+**Hydra**::
+The stumps of any heads severed by non-fire damage
+grow into two new heads at the end of its turn,
+healing the stat or Grit of the original head
+and gaining one Grit.
 
 //== Loot
 
@@ -294,61 +304,60 @@ Here are a couple more example stat lines.
 
 == Character Creation: Additional Training
 
-If the setting and campaign supports it,
+If the setting and campaign support it,
 the GM may wish to make the following training available
 at character creation
 or through mentors that the PCs meet during their adventures.
 
-* **Academics:** History, religion, arcana
+* **Academics:** History, lore, religion
 * **Seafaring:** Sailing, swimming, navigation
 * **Witchcraft:** Medicine, herbalism, alchemy
 
 //== Combat Addition: Critical Successes and/or Failures
 
-== Combat Alternative: Hit Points
-
-The following are alternative rules for combat
-based on health and damage dice instead of Grit and stat damage.
-
-=== Armor & Health
-
-You start with 4 max health and 0 Armor
-(2 Armor with the starting gear).
-Instead of Grit, you gain +2 max health at even levels.
-Shields, chestplates, leggings, and similar protection
-provide 1 Armor each, to a maximum of 3.
-Armor reduces damage.
-
-=== Damage & Attacking
-
-To attack, roll damage and subtract the target's Armor.
-The target loses that much health.
-
-* **Unarmed:** Fists deal **d4** damage
-* **Weapon:** Weapons deal **d6** damage
-* **Magic:** Magic deals **d8** damage
-* **Ultimate:** Exceptional attacks add **d12** to the damage
-
-At 0 health, a PC falls unconscious.
-When a PC reaches negative health,
-they die in 1d4 turns unless stabilized with healing.
-
-When a PC dies,
-the player can create a new character or take over a hireling.
-To avoid downtime, they rejoin the group as soon as they're ready.
-
-=== Healing
-
-Once per hour, you can rest for 5 minutes
-and drink fresh water to heal 2 health.
-
-Once per day, you can take a dose of medicine
-to heal 2 health.
-
-Once per day,
-you can eat a meal
-and sleep in a safe place for 6 hours
-to heal all health.
+//== Combat Alternative: Hit Points
+//
+//The following are alternative rules for combat
+//based on health and damage dice instead of Grit and stat damage.
+//
+//=== Armor & Health
+//
+//You start with 4 max health
+//Instead of Grit, you gain +2 max health at even levels.
+//Shields, chestplates, leggings, and similar protection
+//provide 1 Armor each, to a maximum of 3.
+//Armor reduces damage.
+//
+//=== Damage & Attacking
+//
+//To attack, roll damage and subtract the target's Armor.
+//The target loses that much health.
+//
+//* **Unarmed:** Fists deal **d4** damage
+//* **Weapon:** Weapons deal **d6** damage
+//* **Magic:** Magic deals **d8** damage
+//* **Ultimate:** Exceptional attacks add **d12** to the damage
+//
+//At 0 health, a PC falls unconscious.
+//When a PC reaches negative health,
+//they die in 1d4 turns unless stabilized with healing.
+//
+//When a PC dies,
+//the player can create a new character or take over a hireling.
+//To avoid downtime, they rejoin the group as soon as they're ready.
+//
+//=== Healing
+//
+//Once per hour, you can rest for 5 minutes
+//and drink fresh water to heal 2 health.
+//
+//Once per day, you can take a dose of medicine
+//to heal 2 health.
+//
+//Once per day,
+//you can eat a meal
+//and sleep in a safe place for 6 hours
+//to heal all health.
 
 
 
@@ -381,7 +390,7 @@ to heal all health.
 //has its own difficulty,
 //this game has a single Difficulty that varies as the PCs' situation changes.
 //The Difficulty is set by the GM.
-//It is shown to the players at all times.
+//It's shown to the players at all times.
 //
 //This is done to speed up gameplay and make it easier to run the game.
 //The GM doesn't have to think of a DC for every action a player takes or
