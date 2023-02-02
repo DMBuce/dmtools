@@ -1,3 +1,7 @@
+:toc: macro
+:sectlinks: 2
+:toclevels: 5
+
 = Scribble Nib
 
 A tabletop RPG
@@ -11,7 +15,7 @@ Cairn,
 and
 Knave.
 
-// TODO: TOC
+toc::[]
 
 = Character Creation
 
@@ -85,6 +89,12 @@ section.
 | +1 Grit
 |===
 
+== Grit
+
+Starting at 2nd level, you gain Grit,
+which is used to protect your stats when taking damage.
+See the "Damage" section of the Combat rules for details.
+
 = Rules Summary
 
 == Stat Rolls
@@ -130,23 +140,20 @@ If the attempt is unsuccessful, the PC takes damage.
 
 == Damage
 
-On a hit, the target chooses their STR, DEX, or WIL stat to take damage.
+On a hit, the target chooses one undamaged Grit
+or an undamaged STR, DEX, or WIL stat to take damage.
 Rolls made with damaged stats have Disadvantage.
 Rolls that PCs make against enemies have Advantage
 if the target has a damaged stat.
 
-If a PC or enemy takes damage while all their stats are already damaged,
+If a PC or enemy takes damage
+while all their Grit and stats are already damaged,
 they fall unconscious.
 Damage taken while unconscious means instant death.
 
 When a PC dies,
 the player can create a new character or take over a hireling.
 To avoid downtime, they rejoin the group as soon as they're ready.
-
-== Grit
-
-Starting at 2nd level, PCs have Grit.
-They can choose one Grit to take damage instead of a stat.
 
 == Healing
 
@@ -199,8 +206,6 @@ and eat a meal to heal all Grit and one stat.
 . Vial of Acid
 . Vial of Poison
 . Waterskin
-
-//TODO: split out dangerous/exotic materials
 
 **Gear:** _5-10gp_
 
