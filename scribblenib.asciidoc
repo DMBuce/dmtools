@@ -177,76 +177,76 @@ use the following table.
 
 **Supplies**: 1-5gp
 
-# Antitoxin
-# Arrows
-# Bear Repellent
-# Caltrops
-//# Chalk
-# Glue
-# Grease
-# Incense
-# Ink
-# Medicine
-# Nails
-# Oil
-# Rations
-//# Salve
-# Salt
-# Sealant
-# Soap
-# Tar
-# Torch
-# Vial of Acid
-# Vial of Poison
-# Waterskin
+. Antitoxin
+. Arrows
+. Bear Repellent
+. Caltrops
+//. Chalk
+. Glue
+. Grease
+. Incense
+. Ink
+. Medicine
+. Nails
+. Oil
+. Rations
+//. Salve
+. Salt
+. Sealant
+. Soap
+. Tar
+. Torch
+. Vial of Acid
+. Vial of Poison
+. Waterskin
 
 //TODO: split out dangerous/exotic materials
 
 **Gear**: 5-10gp
 
-# Bear Trap
-# Bucket
-# Chain
-# Crowbar
-# Dowsing Rod
-# Grappling Hook
-# Hammer
-# Horn
-# Lockpicks
-# Manacles
-# Metal File
-# Net
-# Pick
-# Pitons
-# Pole
-# Rope
-# Saw
-# Shovel
-# Spyglass
-# Tinderbox
+. Bear Trap
+. Bucket
+. Chain
+. Crowbar
+. Dowsing Rod
+. Grappling Hook
+. Hammer
+. Horn
+. Lockpicks
+. Manacles
+. Metal File
+. Net
+. Pick
+. Pitons
+. Pole
+. Rope
+. Saw
+. Shovel
+. Spyglass
+. Tinderbox
 
 **Weapons & Armor**: 10-50gp unless otherwise noted
 
-# Bow
-# Crossbow
-# Sling
-# Axe
-# Dagger
-# Flail
-# Halberd
-# Longsword
-# Mace
-# Short Sword
-# Spear
-# War Hammer
-# Shield (+1 armor)
-# Helmet (+1 armor)
-# Gambeson (+1 armor)
-# Brigandine (+1 armor)
-# Padded Armor (+1 armor)
-# Leather Armor (+1 armor)
-# Chainmail (+2 armor, 400gp)
-# Platemail (+3 armor, 1000gp)
+. Bow
+. Crossbow
+. Sling
+. Axe
+. Dagger
+. Flail
+. Halberd
+. Longsword
+. Mace
+. Short Sword
+. Spear
+. War Hammer
+. Shield (+1 armor)
+. Helmet (+1 armor)
+. Gambeson (+1 armor)
+. Brigandine (+1 armor)
+. Padded Armor (+1 armor)
+. Leather Armor (+1 armor)
+. Chainmail (+2 armor, 400gp)
+. Platemail (+3 armor, 1000gp)
 
 // Luxury Items: 50-100gp
 
