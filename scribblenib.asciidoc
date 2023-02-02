@@ -120,7 +120,9 @@ Only roll one d20 if you have both.
 
 == Turns
 
-The player to the GM's left goes first and play proceeds to the right.
+Players who make a DEX roll take their first turn before the GM.
+Then the GM takes their turn,
+and play proceeds to the GM's left after that.
 
 == Attacking
 
