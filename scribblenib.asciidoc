@@ -42,17 +42,6 @@ Choose training in one of the following areas.
 * **Survival:** Tracking, foraging, navigating wilderness
 * **Thievery:** Tinkering, picking locks and pockets
 
-== Inventory
-
-You have 16 item slots.
-
-* 2 hand slots for items you are holding and can use
-* 2 strap slots for items that can be freely swapped with hand slots
-* 4 body slots for armor and worn magic items
-* 8 pack slots for items that take an action to find
-
-Large items such as two-handed weapons take up two slots.
-
 == Choose Starting Equipment
 
 Your starting equipment is:
@@ -68,6 +57,17 @@ Roll or choose your gear and supplies using the tables in the Equipment
 section.
 
 //The GM may have you start with an Heirloom or Legacy.
+
+== Inventory
+
+You have 16 item slots.
+
+* 2 hand slots for items you are holding and can use
+* 2 strap slots for items that can be freely swapped with hand slots
+* 4 body slots for armor and worn magic items
+* 8 pack slots for items that take an action to find
+
+Large items such as two-handed weapons take up two slots.
 
 == Progression
 
@@ -156,13 +156,14 @@ To avoid downtime, they rejoin the group as soon as they're ready.
 Once per hour, you can catch your breath for 5 minutes
 and drink fresh water to heal one Grit.
 
-Once per day, you can tend to your health
+Once per day, you or an ally can tend to your health
 (bandage a wound, take a dose of medicine, etc.)
 to heal one Grit.
 
-Once per day in a safe place,
-you can sleep for 6 hours
-and eat a meal to heal all Grit and one stat.
+Once per day,
+you can eat a meal
+and sleep for 6 hours
+to heal all Grit and one stat.
 
 //= Narrative Combat
 //
