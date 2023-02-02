@@ -28,7 +28,9 @@ Assign +0, +1, and +2 to your stats in any order.
 * **Will (WIL):** force of personality and persuasion
 
 You also have a base **Armor** of +0,
-which will increase when you select your starting gear.
+which will increase when you select your starting gear;
+and no **Grit**, which is used to protect stats when taking damage.
+You gain Grit starting at 2nd level.
 
 == Choose Training
 
@@ -88,12 +90,6 @@ section.
 | 6
 | +1 Grit
 |===
-
-== Grit
-
-Starting at 2nd level, you gain Grit,
-which is used to protect your stats when taking damage.
-See the "Damage" section of the Combat rules for details.
 
 = Rules Summary
 
