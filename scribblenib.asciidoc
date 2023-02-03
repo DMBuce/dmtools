@@ -287,13 +287,18 @@ For the same reason, they also don't need numbers assigned to their stats.
 
 A monster's stat block is just its name, stats, Grit,
 and any abilities it has.
-
-A bear's stat block is simply "Bear ☐☐☐☐".
+Stats and Grit are represented with checkboxes.
+For example, a bear's stat block is "Bear ☐☐☐☐".
 The rightmost three checkboxes represent the monster's stats
 and other checkboxes represent Grit.
-Here are a few more example stat blocks.
 
-**Goblin Minion** ☐::
+A monster can have fewer than three stats.
+For example, a goblin's stat block might be "Goblin ☐".
+A particularly weak stat block might have no stats,
+e.g. "Goblin Minion",
+in which case the monster is knocked out with a single hit.
+
+Here are some more example stat blocks.
 
 **Vampire** ☐☐☐☐::
 Deals damage to STR before other stats.
