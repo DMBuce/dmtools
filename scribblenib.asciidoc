@@ -331,7 +331,6 @@ in which case the monster is knocked out with a single hit.
 Here are some more example stat blocks.
 
 **Vampire** ☐☐☐::
-Deals damage to STR before other stats.
 Heals one stat when dealing damage with its bite.
 
 **Troll** ☐☐☐☐::
