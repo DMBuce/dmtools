@@ -293,7 +293,7 @@ The rightmost three checkboxes represent the monster's stats
 and other checkboxes represent Grit.
 
 Unlike PCs, monster can have fewer than three stats.
-For example, a goblin's stat block might be "_Goblin ☐_".
+For example, a goblin's stat block might be _"Goblin ☐"_.
 A particularly weak stat block might have no stats,
 e.g. _"Goblin Minion"_,
 in which case the monster is knocked out with a single hit.
