@@ -300,12 +300,12 @@ in which case the monster is knocked out with a single hit.
 
 Here are some more example stat blocks.
 
+**Troll** ☐☐☐::
+Regrows lost limbs and heals one stat at the end of its turn.
+
 **Vampire** ☐☐☐☐::
 Deals damage to STR before other stats.
 Gains Advantage to STR for 1 round when dealing damage with its bite.
-
-**Troll** ☐☐☐☐::
-Regrows lost limbs and heals one stat at the end of its turn.
 
 //**Hydra** ☐☐☐☐☐::
 //The stumps of any heads severed by non-fire damage
