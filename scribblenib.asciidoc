@@ -310,10 +310,11 @@ A simple rule of thumb is to use 12 for easy Difficulty,
 == Monsters
 
 This game is designed to make it easy to create monsters on the fly.
-Since PCs roll to attack and also to defend, monsters never need to roll.
+Since PCs roll to attack and also to defend,
+monsters never need to roll and don't need bonuses assigned to their stats.
 Since PCs always roll against the Difficulty,
-monsters never need a monster-specific "target number" or "difficulty class" to roll against.
-For the same reason, they also don't need numbers assigned to their stats.
+monsters never need a monster-specific
+"target number" or "difficulty class" to roll against.
 
 A monster's stat block is just its name, stats, Grit,
 and any abilities it has.
@@ -322,7 +323,7 @@ For example, a bear's stat block is _"Bear ☐☐☐☐"_.
 The rightmost three checkboxes represent the monster's stats
 and other checkboxes represent Grit.
 
-Unlike PCs, monster can have fewer than three stats.
+Unlike PCs, monsters can have fewer than three stats.
 For example, a goblin's stat block might be _"Goblin ☐"_.
 A particularly weak stat block such as _"Goblin Minion"_ might have no stats,
 in which case the monster is knocked out with a single hit.
@@ -334,7 +335,7 @@ Deals damage to STR before other stats.
 Heals one stat when dealing damage with its bite.
 
 **Troll** ☐☐☐☐::
-Regrows lost limbs and heals one stat at the end of its turn.
+Regrows one limb and heals one stat at the end of its turn.
 
 //**Hydra** ☐☐☐☐☐::
 //The stumps of any heads severed by non-fire damage
