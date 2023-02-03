@@ -288,25 +288,28 @@ For the same reason, they also don't need numbers assigned to their stats.
 A monster's stat block is just its name, stats, Grit,
 and any abilities it has.
 
-A bear's stat block is simply "Bear &#25A1; &#25A1; &#25A1; &#25A1;".
+A bear's stat block is simply "Bear ☐☐☐☐".
 The rightmost three checkboxes represent the monster's stats
 and other checkboxes represent Grit.
 Here are a few more example stat blocks.
 
-**Goblin Minion** &#25A1;::
+**Goblin Minion** ☐::
 
-**Vampire** (3 stats)::
+**Vampire** ☐☐☐☐::
 Deals damage to STR before other stats.
 Gains Advantage to STR for 1 round when dealing damage with its bite.
 
-**Troll** (3 stats, 1 Grit)::
+**Troll** ☐☐☐☐::
 Regrows lost limbs and heals one stat at the end of its turn.
 
-//**Hydra** (3 stats, 1 Grit)::
+//**Hydra** ☐☐☐☐☐::
 //The stumps of any heads severed by non-fire damage
 //grow into two new heads at the end of its turn,
 //healing the stat or Grit of the original head
 //and gaining one Grit.
+
+**Dragon** ☐☐☐☐☐☐☐☐☐::
+Flies and breathes fire.
 
 //== Loot
 
