@@ -322,6 +322,9 @@ Stats and Grit are represented with checkboxes.
 For example, a bear's stat block is _"Bear ☐☐☐☐"_.
 The rightmost three checkboxes represent the monster's stats
 and other checkboxes represent Grit.
+The GM ticks off checkboxes from left to right as the monster takes damage.
+
+𝍲𝍳𝍴𝍵𝍶
 
 Unlike PCs, monsters can have fewer than three stats.
 For example, a goblin's stat block might be _"Goblin ☐"_.
