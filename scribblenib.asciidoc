@@ -333,6 +333,7 @@ Here are some more example stat blocks.
 
 **Vampire** ☐☐☐::
 Heals one stat when dealing damage with its bite.
+Regenerates in its coffin when killed unless staked through the heart.
 
 **Troll** ☐☐☐☐::
 Regrows one limb and heals one stat at the end of its turn.
