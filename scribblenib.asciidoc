@@ -47,7 +47,7 @@ Your starting equipment is:
 
 * A melee weapon of your choice
 * A shield (+1 Armor) or ranged weapon of your choice
-* Leather armor (+1 Armor), or a random spellbook
+* Leather armor (+1 Armor) or a random spellbook
 * A sack or backpack that provides 8 pack slots
 * A belt that provides 2 strap slots
 * 3 Gear
@@ -139,7 +139,8 @@ Some magic attacks use WIL instead of STR or DEX.
 
 Enemies may attack on the GM's turn.
 PCs roll Armor to defend against attacks.
-If the attempt is unsuccessful, the PC takes damage.
+Some magic attacks are defended against using WIL instead of Armor.
+If the roll is unsuccessful, the PC takes damage.
 
 == Damage
 
