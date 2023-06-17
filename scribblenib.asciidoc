@@ -27,7 +27,7 @@ Assign +0, +1, and +2 to your stats in any order.
 * **Will (WIL):** force of personality and persuasion
 
 You also have a base **Armor** of +0,
-which will increase when you select your starting gear;
+which will increase when you select your starting equipment;
 and no **Grit**, which is used to protect stats when taking damage.
 You gain Grit starting at 2nd level.
 
@@ -45,14 +45,16 @@ Choose training in one of the following areas.
 
 Your starting equipment is:
 
-* Melee weapon of your choice
-* Ranged weapon of your choice
-* Leather armor (+1 Armor) or a random spellbook
-* Shield (+1 Armor)
+* A melee weapon of your choice
+* A ranged weapon of your choice
+* Leather armor (+1 Armor), or a random spellbook
+* A shield (+1 Armor)
+* A sack or backpack that provides 8 pack slots
+* A belt that provides 2 strap slots
 * 3 Gear
 * 3 Supplies
 
-Roll or choose your gear and supplies using the tables in the Equipment
+Roll or choose your Gear and Supplies using the tables in the Equipment
 section.
 
 //The GM may have you start with an Heirloom or Legacy.
@@ -61,12 +63,14 @@ section.
 
 You have 16 item slots.
 
-* 2 hand slots for items you are holding and can use
+* 2 hand slots for items you are holding and using
 * 2 strap slots for items that can be freely swapped with hand slots
 * 4 body slots for armor and worn magic items
 * 8 pack slots for items that take an action to find
 
-Large items such as two-handed weapons take up two slots.
+Most items take up one item slot.
+Large items such as two-handed weapons and full suits of armor take up two slots.
+Small items such as arrows and coins can be bundled together in one slot.
 
 == Levels
 
@@ -98,8 +102,8 @@ Large items such as two-handed weapons take up two slots.
 
 If the Game Master (GM) asks for a STR, DEX, WIL, or Armor roll,
 roll a d20, add the appropriate bonus,
-and compare it to the Difficulty.
-A roll above the Difficulty is a success,
+and compare it against the Difficulty.
+A roll that meets or exceeds the Difficulty is a success,
 which means you accomplish what you set out to do.
 An unsuccessful roll will be interpreted and described by the GM.
 
@@ -110,7 +114,8 @@ The Difficulty is shown to the players at all times.
 
 == Advantage
 
-A player's character (PC) can have Advantage or Disadvantage on a roll.
+The GM may decide that a player character (PC)
+has Advantage or Disadvantage on a roll due to their circumstances.
 To roll with Advantage, roll two d20s and take the highest roll.
 To roll with Disadvantage, take the lowest roll.
 
@@ -298,14 +303,17 @@ This game has a single Difficulty (DC) that varies as the PCs' situation changes
 It's set by the GM and shown to the players at all times.
 
 This is done to speed up gameplay and make it easier to run the game.
-The GM doesn't have to think of a DC for every action a player takes or
+Players always know what number they're rolling against,
+and the GM doesn't have to think of a DC for every action a player takes or
 monster they might encounter.
 Instead, the GM simply thinks of a DC
 representing how hard or easy the current scenario is,
 and displays it in a prominent location with a post-it or a d20.
 
-A simple rule of thumb is to use 12 for easy Difficulty,
-15 for medium Difficulty, and 18 for hard Difficulty.
+A simple rule of thumb is to use
+Difficulty 12 in relatively safe areas such as towns or a home base,
+Difficulty 15 in unsafe areas such as dungeons and wilderness,
+and Difficulty 18 in areas with villainous or world-ending threats.
 
 == Monsters
 
@@ -337,12 +345,6 @@ Regenerates in its coffin when killed unless staked through the heart.
 
 **Troll** ☐☐☐☐::
 Regrows one limb and heals one stat at the end of its turn.
-
-//**Hydra** ☐☐☐☐☐::
-//The stumps of any heads severed by non-fire damage
-//grow into two new heads at the end of its turn,
-//healing the stat or Grit of the original head
-//and gaining one Grit.
 
 **Dragon** ☐☐☐☐☐☐☐☐☐::
 Flies and breathes fire.
@@ -412,7 +414,6 @@ or through mentors that the PCs meet during their adventures.
 
 
 
-
 //== How to Play
 //
 //At its core, the game is a conversation.
@@ -421,68 +422,8 @@ or through mentors that the PCs meet during their adventures.
 //in a shared fictional world.
 //The other people describe what their characters
 //a.k.a. Player Characters (PCs) do in response,
-//and the GM describes how thier actions impact the world.
-//
-//== Stats & Rolls
-//
-//PCs have three stats, each with an associated bonus:
-//
-//* **Strength (STR)** is your physical power, toughness, and vigor
-//* **Dexterity (DEX)** is your physical grace, agility, and swiftness
-//* **Will (WIL)** is your wits, perception, willpower, and charm
-//
-//When a PC is at risk or there's something on the line,
-//the GM will ask the player to make a stat roll
-//-- a Strength roll, a Dex roll, or a Will roll -- 
-//against the Difficulty (DC).
-//
-//Note that it's *THE* Difficulty, not "a" Difficulty.
-//Unlike some other games where every task and each stat of every monster
-//has its own difficulty,
-//this game has a single Difficulty that varies as the PCs' situation changes.
-//The Difficulty is set by the GM.
-//It's shown to the players at all times.
-//
-//This is done to speed up gameplay and make it easier to run the game.
-//The GM doesn't have to think of a DC for every action a player takes or
-//monster they might encounter.
-//Instead, the GM simply thinks of a DC representing how hard or easy the
-//current scenario is, and displays it in a prominent location with a post-it or a d20.
-//Players can always look to see what number to roll against.
-//
-// //There are also some optional stats that the GM may or may not use:
-// //
-// //* **Attack (ATK):** Ability to inflict harm
-// //* **Armor (AMR):** Protection against physical attacks
-// //* **Health (HTH):** Capacity for taking damage
-//
-//To make a stat roll,
-//roll a twenty-sided die (d20) and add your stat bonus.
-//A result higher than the DC is a success,
-//while a result lower than or equal to it will be interpreted and explained by
-//the GM.
-//
-//So for example, if the GM asks you to make a Strength (STR) roll and the DC is 15,
-//you first roll a d20. Suppose you roll a 14. If your STR is +2,
-//your total result is 16 -- higher than DC 15.
-//You do the thing you set out to do. Success!
-//
-// //If you had instead rolled a 13 with +2 STR,
-// //your result of 15 would
-//
-//=== Advantage & Disadvantage
-//
-//If a PC's circumstances give their roll Advantage,
-//the player rolls two d20s and takes the higher roll before applying their modifier.
-//On the other hand, a roll with Disadvantage is made by taking the lower roll.
-//Advantage cancels out Disadvantage and vice versa.
-//
-//Rolls made with a damaged stat have Disadvantage.
-//A PC can gain Advantage from their training, from being aided by another PC,
-//from a tool, or from their surroundings.
-//If you're not sure whether something gives you Advantage on a roll,
-//ask the GM.
-//
+//and the GM describes how their actions impact the world.
+
 //== Combat & Attacking
 //
 //When the GM introduces an enemy, they will describe it in detail.
@@ -516,94 +457,4 @@ or through mentors that the PCs meet during their adventures.
 //grit > shield/armor > stat damage > hard moves (unconscious/dying)
 //
 //When a PC is wounded, the player chooses
-//
-//== Rest
-//
-//Short Rest (10 minutes): Use Supplies to clear your Grit of all damage.
-//
-//Long Rest (6 hours): Use Supplies to clear your Grit and stats of all damage.
-//
-//== Character Creation
-//
-//Add Heirloom or Legacy.
-//
-//Add "Gear" or "Supplies"
-//
-//== Progression
-//
-//Level | Features Gained
-//=======================
-//    2 | +1 grit and new training
-//    3 | +1 to a stat bonus
-//    4 | +1 grit and new training
-//    5 | +1 to a stat bonus
-//    6 | +1 grit and new training
-//
-//== Actions
-//
-//CoM
-//* Convice - diplomacy
-//
-//**Go for the eyes:**
-//When you attack a specific body part in melee,
-//make a STR roll.
-//If you roll greater than the enemy's Difficulty,
-//you wound that body part.
-//
-//**Aim for the heart:**
-//When you shoot at an enemy's limb or vital organ,
-//make a DEX roll.
-//If you roll above
-//
-//**???:**
-//When your safety is at risk or there's something on the line,
-//roll
-//
-//**???:**
-//When you aid another player character,
-//roll
-//If you exceed the room difficulty,
-//they gain Advantage on their roll.
-//
-//== Inventory
-//
-//Slots:
-//
-//* 2 hand + 2 strap + 4 body + 8 pack
-//* head + neck + shoulders + waist + arm + 2x rings + feet
-//* 2 armor + 2 ring + head + neck + cape + belt + shoes?
-//* 3E: armor + head + eye + neck + torso + body + waist + shoulders + arm/wrist + hands + 2x rings + feet
-//
-//Start with 3 Gear/Supplies in your pack. 
-//
-//== GMing
-//
-//=== Difficulty & Abjudicating Rolls
-//
-//Tasks take Effort to achieve.
-//
-//The GM will assign a default DC for each room.
-//Individual monsters and tasks
-
-////
-
-=== Monsters
-
-GMs can increase or decrease the challenge that certain monsters present
-by giving them different stats as needed,
-or by making certain rolls against them hard or easy.
-
-== Magic
-
-== Loot
-
-== Optional Character Creation Rules
-
-=== Flaws and Abilities
-
-== Optional Gameplay Rules
-
-=== Critical Successes and/or Failures
-
-////
 
