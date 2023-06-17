@@ -337,62 +337,62 @@ Some possible ways to set milestones include:
 
 == Magic
 
-[cols="1,1"]
+=== Effects
+
+[cols="1,1,1,1,1,1,1,1,1"]
 |===
 | Type | Difficulty | Duration | Range | Area | Subjects | Weight | Force | Energy
 
 | Cantrip
-| 10
-| 5 minutes
-| Touch
+| 9
+| A few minutes
+| Arm's reach
 | Closet
 | 1
-| Weapon
-| Punch
+| Cat
+| Push
 | Candle
 
-| Charm
+| Minor Spell
 | 12
-| 30 minutes
-| Near
+| Half an hour
+| Throwing distance
 | Room
 | 10
-| Person
-| Full tilt body check
-| Campfire
-
-| Spell
-| 14
-| 1 hour
-| Within sight
-| Field
-| 100
-| Bear, horse, or rowboat
-| Sturdy club
+| Horse
+| Weapon Strike
 | Bonfire
 
-| ???
-| 16
-| 6 hours
-| A few miles
-| Square mile
-| 1000
+| Major Spell
+| 15
+| A few hours
+| Sight
+| Field
+| 100
 | Laden wagon
-| Runaway wagon
+| Cannonball
 | Forest fire
+
+//| ???
+//| 16
+//| 6 hours
+//| A few miles
+//| Square mile
+//| 1000
+//| Laden wagon
+//| Runaway wagon
+//| Forest fire
 
 | Ritual
 | 18
-| 24 hours
+| A day
 | A few hundred miles
 | City
 | Entire city/country
 | Ship
-| Cannonball
+| Meteor
 | Volcano
 |===
-
-=== Effects
 
 //spell systems
 //--
