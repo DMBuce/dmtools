@@ -73,8 +73,6 @@ Small items such as arrows and coins can be bundled together in one slot.
 
 == Levels
 
-//TODO: Milestones
-
 [cols="1,1"]
 |===
 | Level | Features Gained
@@ -95,11 +93,14 @@ Small items such as arrows and coins can be bundled together in one slot.
 | +1 Grit
 |===
 
+Player characters (PCs) gain levels whenever a Milestone is reached.
+The game master (GM) will determine when that is.
+
 = Rules Summary
 
 == Rolls
 
-If the Game Master (GM) asks for a STR, DEX, WIL, or Armor roll,
+If the GM asks for a STR, DEX, WIL, or Armor roll,
 roll a d20, add the appropriate bonus,
 and compare it against the Difficulty.
 A roll that meets or exceeds the Difficulty is a success,
@@ -113,7 +114,7 @@ The Difficulty is shown to the players at all times.
 
 == Advantage
 
-The GM may decide that a player character (PC)
+The GM may decide that a player character
 has Advantage or Disadvantage on a roll due to their circumstances.
 To roll with Advantage, roll two d20s and take the highest roll.
 To roll with Disadvantage, take the lowest roll.
@@ -161,8 +162,9 @@ To avoid downtime, they rejoin the group as soon as they're ready.
 
 == Healing
 
-After each combat, you can catch your breath for 5 minutes
-and drink fresh water to heal one Grit.
+//After an encounter,
+//a PC that was damaged in the encounter can catch their breath for 5 minutes
+//and drink fresh water to heal one Grit.
 
 Once per day, you or an ally can tend to your health
 (bandage a wound, take a dose of medicine, etc.)
@@ -349,6 +351,18 @@ Regrows one limb and heals one stat at the end of its turn.
 
 **Dragon** ☐☐☐☐☐☐☐☐☐::
 Flies and breathes fire.
+
+== Milestones
+
+The GM can set milestones in whatever way they see fit.
+This is so that the rate of the players' progression
+can match the desired pace of the campaign.
+Some possible ways to set milestones include:
+
+* At specific story beats
+* After each boss encounter
+* Whenever the party finds a treasure hoard
+* At the end of each session
 
 //== Loot
 
