@@ -264,39 +264,6 @@ to heal all Grit and one stat.
 
 // Exotic Goods: 100-1000gp
 
-//= Magic
-//
-//spell systems
-//--
-//spell types: cantrips, spells, rituals, etc.
-//magic types: alchemy, artifice
-//all systems require a focus
-//wild mage: default system
-//godbotherers: patrons of powerful beings, prepend spell with [NAME]'s
-//specialist mage: lock one aspect
-//spellweaving: cast arbitrary spells, takes longer, other costs sometimes
-//--
-//barbarians of lemuria: cantrips, first/second/third magnitude w/ example spells
-//wonder & wickedness: levelless spell list
-//Beyond the Wall and other adventures: cantrip/spell/ritual w/ spell list
-//Jaws of the Six Serpents: sorcery/charms/alchemy/divination w/ effects table
-//mini six simpler magic system: effect lists similar to jotss effects table
-//* https://forum.rpg.net/index.php?threads/mini-six-simpler-magic-system.531361/
-//ars magicka hacked for fudge: 4 actions x 5 realms give 20 effects
-//* https://www.reddit.com/r/rpg/comments/36je3s/quick_easy_freeform_magic_system_for_a_single/crf1cuf/
-//
-//spell types: cantrips, spells, rituals
-//magic types: alchemy, artifice
-//
-//scroll/potion of ____: contains one spell
-//wand of ____: change one spell aspect into ____
-//spellweaver's hooks: expend spell slot to create random spell, modify 1/round
-//
-//godbotherers: patrons of powerful beings, prepend spell with [NAME]'s
-//--
-//focus: holy symbol
-//need separate good/holy/nature tables?
-
 = GMing
 
 == Managing Difficulty
@@ -367,6 +334,96 @@ Some possible ways to set milestones include:
 //== Loot
 
 = Optional Rules
+
+== Magic
+
+[cols="1,1"]
+|===
+| Type | Difficulty | Duration | Range | Area | Subjects | Weight | Force | Energy
+
+| Cantrip
+| 10
+| 5 minutes
+| Touch
+| Closet
+| 1
+| Weapon
+| Punch
+| Candle
+
+| Charm
+| 12
+| 30 minutes
+| Near
+| Room
+| 10
+| Person
+| Full tilt body check
+| Campfire
+
+| Spell
+| 14
+| 1 hour
+| Within sight
+| Field
+| 100
+| Bear, horse, or rowboat
+| Sturdy club
+| Bonfire
+
+| ???
+| 16
+| 6 hours
+| A few miles
+| Square mile
+| 1000
+| Laden wagon
+| Runaway wagon
+| Forest fire
+
+| Ritual
+| 18
+| 24 hours
+| A few hundred miles
+| City
+| Entire city/country
+| Ship
+| Cannonball
+| Volcano
+|===
+
+=== Effects
+
+//spell systems
+//--
+//spell types: cantrips, spells, rituals, etc.
+//magic types: alchemy, artifice
+//all systems require a focus
+//wild mage: default system
+//godbotherers: patrons of powerful beings, prepend spell with [NAME]'s
+//specialist mage: lock one aspect
+//spellweaving: cast arbitrary spells, takes longer, other costs sometimes
+//--
+//barbarians of lemuria: cantrips, first/second/third magnitude w/ example spells
+//wonder & wickedness: levelless spell list
+//Beyond the Wall and other adventures: cantrip/spell/ritual w/ spell list
+//Jaws of the Six Serpents: sorcery/charms/alchemy/divination w/ effects table
+//mini six simpler magic system: effect lists similar to jotss effects table
+//* https://forum.rpg.net/index.php?threads/mini-six-simpler-magic-system.531361/
+//ars magicka hacked for fudge: 4 actions x 5 realms give 20 effects
+//* https://www.reddit.com/r/rpg/comments/36je3s/quick_easy_freeform_magic_system_for_a_single/crf1cuf/
+//
+//spell types: cantrips, spells, rituals
+//magic types: alchemy, artifice
+//
+//scroll/potion of ____: contains one spell
+//wand of ____: change one spell aspect into ____
+//spellweaver's hooks: expend spell slot to create random spell, modify 1/round
+//
+//godbotherers: patrons of powerful beings, prepend spell with [NAME]'s
+//--
+//focus: holy symbol
+//need separate good/holy/nature tables?
 
 //== Character Creation: Heirlooms & Legacies
 
