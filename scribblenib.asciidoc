@@ -46,9 +46,8 @@ Choose training in one of the following areas.
 Your starting equipment is:
 
 * A melee weapon of your choice
-* A ranged weapon of your choice
+* A shield (+1 Armor) or ranged weapon of your choice
 * Leather armor (+1 Armor), or a random spellbook
-* A shield (+1 Armor)
 * A sack or backpack that provides 8 pack slots
 * A belt that provides 2 strap slots
 * 3 Gear
@@ -328,16 +327,17 @@ A monster's stat block is just its name, stats, Grit,
 and any abilities it has.
 Stats and Grit are represented with checkboxes.
 For example, a bear's stat block is _"Bear ☐☐☐☐"_.
-The rightmost three checkboxes represent the monster's stats
+The leftmost three checkboxes represent the monster's stats
 and other checkboxes represent Grit.
-The GM ticks off checkboxes from left to right as the monster takes damage.
+The GM ticks off checkboxes from right to left as the monster takes damage.
 
 Unlike PCs, monsters can have fewer than three stats.
 For example, a goblin's stat block might be _"Goblin ☐"_.
 A particularly weak stat block such as _"Goblin Minion"_ might have no stats,
 in which case the monster is knocked out with a single hit.
 
-Here are some more example stat blocks.
+In addition to a name, stats, and Grit, monsters can have abilities.
+Here are some example stat blocks with abilities.
 
 **Vampire** ☐☐☐::
 Heals one stat when dealing damage with its bite.
