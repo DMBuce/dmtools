@@ -18,6 +18,63 @@ toc::[]
 
 = Character Creation
 
+== Choose Abilities
+
+Your character (a.k.a. Player Character or PC for short)
+has a Starting ability and will gain up to two more abilities,
+an Improved ability and an Ultimate ability,
+as they gain experience and power while adventuring.
+
+Discuss with the gamemaster (GM) to determine your PC's abilities.
+Here is an example of how such a discussion might go:
+
+[quote]
+----
+GM: Okay, first we need to figure out an ability for your character. What's
+the one special thing that they're good at?
+
+Player: I want my character to be able to befriend any animal.
+
+GM: Okay, that sounds pretty powerful. I think you would steamroll the dungeon
+I have planned if you just strolled in with a bunch of panther and bear
+friends. Maybe that could be your ultimate ability. Your starting ability
+could be that you can befriend any cat-sized or smaller animal.
+How does that sound?
+
+Player: Sure, that's great!
+
+GM: Okay, cool. And your improved ability can be that you instantly befriend
+animals as large as a deer. Does that work?
+
+Player: Yes please!
+
+GM: Alright, and how does befriending an animal work exactly? What do you do
+to befriend them?
+
+Player: I was thinking I would just talk to them?
+
+GM: Oh neat, yeah that works.
+----
+
+Some example abilities are below.
+
+Animal Friendship:
+You can talk to animals.
+You befriend cat-sized or smaller animals when you talk to them.
+
+Improved Animal Friendship:
+You befriend deer-sized or smaller animals when you talk to them.
+
+Ultimate Animal Friendship:
+You befriend any animal you talk to.
+
+Surprise Attack: You add 1d6 to attack rolls made against surprised enemies.
+
+Improved Surprise Attack: You deal +1 damage to surprised enemies.
+
+Ultimate Surprise Attack: You add another 1d6 to attack rolls and another +1 damage
+against surprised enemies.
+
 == Choose Stats
 
 Assign +0, +1, and +2 to your stats in any order.
@@ -77,20 +134,26 @@ Small items such as arrows and coins can be bundled together in one slot.
 |===
 | Level | Features Gained
 
+| 1
+| Starting ability, stats, training, equipment, inventory
+
 | 2
-| +1 Grit
+| +2 Grit
 
 | 3
 | +1 to a stat bonus
 
 | 4
-| +1 Grit
+| Improved ability
 
 | 5
-| +1 to a stat bonus
+| +2 Grit
 
 | 6
-| +1 Grit
+| +1 to a stat bonus
+
+| 7
+| Ultimate ability
 |===
 
 Player characters (PCs) gain levels whenever a Milestone is reached.
@@ -335,60 +398,96 @@ Some possible ways to set milestones include:
 
 = Optional Rules
 
-== Magic
+//== Wild Magic
 
-=== Effects
+//== Specialist Magic
 
-[cols="1,1,1,1,1,1,1,1,1"]
+== Spellcraft
+
+=== Requirements
+
+Time to cast:
+The time it takes to cast a spell varies but oftentimes,
+cantrips take but a moment to cast,
+spells take a few actions,
+and rituals take hours or days.
+
+Freedom of movement:
+Some magic requires the ability to say a word or phrase,
+or make a gesture.
+
+Materials:
+Some spells require ingredients.
+
+Energy source:
+Depending on setting,
+spells might need to draw power from leylines,
+godly beings,
+an idol,
+the elements,
+etc.
+
+=== Risks
+
+Magic is unpredictable.
+Failure to cast a spell can result in damage to yourself
+and the people and things around you.
+
+Even successfully cast spells can have unintended consequences
+if you're not careful to think things through.
+Use them wisely.
+
+=== Creating Spells
+
+[cols="1,1,1,1,1,1,1,1,1,1,1"]
 |===
-| Type | Difficulty | Duration | Range | Area | Subjects | Weight | Force | Energy
+.2+| Type 3+| Requirement 7+| Effect
+| Materials | Condition | Conveyance | Duration | Range | Area | Subjects | Weight | Force | Energy
 
 | Cantrip
-| 9
+| Source of power (wand, holy symbol, etc.)
+| None
+| A moment and a word or gesture
 | A few minutes
 | Arm's reach
 | Closet
-| 1
+| One
 | Cat
 | Push
 | Candle
 
 | Minor Spell
-| 12
+| One common ingredient per casting
+| Something common yet specific such as attacking or being attacked
+| A few seconds and a phrase and/or gesticulation
 | Half an hour
 | Throwing distance
 | Room
-| 10
+| Several
 | Horse
-| Weapon Strike
+| Weapon strike
 | Bonfire
 
 | Major Spell
-| 15
+| Several uncommon ingredients per casting
+| A specific time of the day or other uncommonly encountered circumstance
+| A few minutes, an incantation, and a gesticulation
 | A few hours
 | Sight
 | Field
-| 100
-| Laden wagon
+| Several dozen
+| Carriage
 | Cannonball
 | Forest fire
 
-//| ???
-//| 16
-//| 6 hours
-//| A few miles
-//| Square mile
-//| 1000
-//| Laden wagon
-//| Runaway wagon
-//| Forest fire
-
 | Ritual
-| 18
+| Many exotic ingredients per casting
+| A specific phase of the moon, day of the year, or other rare occurrence
+| Hours spent in concentration performing the proper rites
 | A day
 | A few hundred miles
 | City
-| Entire city/country
+| Hundreds
 | Ship
 | Meteor
 | Volcano
