@@ -58,22 +58,21 @@ GM: Oh neat, yeah that works.
 
 Some example abilities are below.
 
-Animal Friendship:
+**Animal Friendship**:
 You can talk to animals.
-You befriend cat-sized or smaller animals when you talk to them.
-
-Improved Animal Friendship:
-You befriend deer-sized or smaller animals when you talk to them.
-
-Ultimate Animal Friendship:
+You befriend cat-sized or smaller animals when you talk to them. +
+**Improved Animal Friendship**:
+You befriend deer-sized or smaller animals when you talk to them. +
+**Ultimate Animal Friendship**:
 You befriend any animal you talk to.
 
-Surprise Attack: You add 1d6 to attack rolls made against surprised enemies.
-
-Improved Surprise Attack: You deal +1 damage to surprised enemies.
-
-Ultimate Surprise Attack: You add another 1d6 to attack rolls and another +1 damage
-against surprised enemies.
+**Surprise Attack**:
+You add 1d6 to attack rolls made against surprised enemies. +
+**Improved Surprise Attack**:
+You deal +1 damage to surprised enemies. +
+**Ultimate Surprise Attack**:
+You add another 1d6 to attack rolls and another +1 damage against surprised
+enemies.
 
 == Choose Stats
 
