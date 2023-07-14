@@ -349,9 +349,7 @@ ready to deploy as the need arises.
 
 == Spellcraft
 
-=== Creating Spells
-
-[cols="1,1,1,1,1,1,1,1,1,1,1"]
+[cols="1,1,1,1,1,1,1,1,1,1,1,1"]
 |===
 .2+| Type 4+| Requirement 7+| Effect
 | Materials | Condition | Conveyance | Risk | Duration | Range | Area | Subjects | Weight | Force | Energy
@@ -360,7 +358,7 @@ ready to deploy as the need arises.
 | Source of power (wand, holy symbol, etc.)
 | None
 | A moment and a word or gesture
-| The roll might be unsuccessful
+| An unsuccessful roll
 | A few minutes
 | Arm's reach
 | Closet
