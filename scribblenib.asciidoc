@@ -53,7 +53,10 @@ you do to befriend them?
 
 Player: I was thinking I would just talk to them?
 
-GM: Oh neat, yeah that works.
+GM: Oh neat, yeah that works. So your starting ability is that you can talk to
+animals and befriend any cat-sized or smaller animal that you talk to. And
+later on you'll be able to befriend deer-sized animals, and later still you
+can befriend any animal. Sounds good!
 ----
 
 Some example abilities are below.
