@@ -30,26 +30,26 @@ Here is an example of how such a discussion might go:
 
 [quote]
 ----
-GM: Okay, first we need to figure out an ability for your character. What's
-the one special thing that they're good at?
+GM: Okay, first we need to figure out an ability for your
+character. What's the one special thing that they're good at?
 
 Player: I want my character to be able to befriend any animal.
 
-GM: Okay, that sounds pretty powerful. I think you would steamroll the dungeon
-I have planned if you just strolled in with a bunch of panther and bear
-friends. Maybe that could be your ultimate ability. Your starting ability
-could be that you can befriend any cat-sized or smaller animal.
+GM: Okay, that sounds pretty powerful. I think you would steamroll the
+dungeon I have planned if you just strolled in with a bunch of panther and
+bear friends. Maybe that could be your ultimate ability. Your starting
+ability could be that you can befriend any cat-sized or smaller animal.
 How does that sound?
 
 Player: Sure, that's great!
 
-GM: Okay, cool. And your improved ability can be that you instantly befriend
-animals as large as a deer. Does that work?
+GM: Okay, cool. And your improved ability can be that you instantly
+befriend animals as large as a deer. Does that work?
 
 Player: Yes please!
 
-GM: Alright, and how does befriending an animal work exactly? What do you do
-to befriend them?
+GM: Alright, and how does befriending an animal work exactly? What do
+you do to befriend them?
 
 Player: I was thinking I would just talk to them?
 
