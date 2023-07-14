@@ -336,7 +336,12 @@ Some possible ways to set milestones include:
 
 //== Loot
 
-= Optional Rules
+= Optional Rulings
+
+There are many possible rulings a GM could make in order to facilitate their
+preferred playstyle at the table.
+Here are some I keep in my back pocket,
+ready to deploy as the need arises.
 
 //== Wild Magic
 
@@ -344,50 +349,18 @@ Some possible ways to set milestones include:
 
 == Spellcraft
 
-=== Requirements
-
-Time to cast:
-The time it takes to cast a spell varies but oftentimes,
-cantrips take but a moment to cast,
-spells take a few actions,
-and rituals take hours or days.
-
-Freedom of movement:
-Some magic requires the ability to say a word or phrase,
-or make a gesture.
-
-Materials:
-Some spells require ingredients.
-
-Energy source:
-Depending on setting,
-spells might need to draw power from leylines,
-godly beings,
-an idol,
-the elements,
-etc.
-
-=== Risks
-
-Magic is unpredictable.
-Failure to cast a spell can result in damage to yourself
-and the people and things around you.
-
-Even successfully cast spells can have unintended consequences
-if you're not careful to think things through.
-Use them wisely.
-
 === Creating Spells
 
 [cols="1,1,1,1,1,1,1,1,1,1,1"]
 |===
-.2+| Type 3+| Requirement 7+| Effect
-| Materials | Condition | Conveyance | Duration | Range | Area | Subjects | Weight | Force | Energy
+.2+| Type 4+| Requirement 7+| Effect
+| Materials | Condition | Conveyance | Risk | Duration | Range | Area | Subjects | Weight | Force | Energy
 
 | Cantrip
 | Source of power (wand, holy symbol, etc.)
 | None
 | A moment and a word or gesture
+| The roll might be unsuccessful
 | A few minutes
 | Arm's reach
 | Closet
@@ -400,6 +373,7 @@ Use them wisely.
 | One common ingredient per casting
 | Something common yet specific such as attacking or being attacked
 | A few seconds and a phrase and/or gesticulation
+| Damage or disfiguration to yourself
 | Half an hour
 | Throwing distance
 | Room
@@ -412,6 +386,7 @@ Use them wisely.
 | Several uncommon ingredients per casting
 | A specific time of the day or other uncommonly encountered circumstance
 | A few minutes, an incantation, and a gesticulation
+| Damage or disfiguration to a friendly group
 | A few hours
 | Sight
 | Field
@@ -424,6 +399,7 @@ Use them wisely.
 | Many exotic ingredients per casting
 | A specific phase of the moon, day of the year, or other rare occurrence
 | Hours spent in concentration performing the proper rites
+| Adventure- or campaign-spanning consequences
 | A day
 | A few hundred miles
 | City
@@ -481,11 +457,14 @@ GMs can, of course,
 work with the players to create training for a specific character concept.
 A retired chef adventurer might have the following training, for example.
 
-* **Cooking**: Baking, sauteing, grilling
+* **Cooking:** Baking, sauteing, grilling
 
 == Character Creation: Custom Abilities
 
-PCs gain a Starting ability at 1st level,
+The default assumption is that characters are ordinary humans
+whose exceptional abilities come from magic items found in loot.
+But for playgroups that want characters with inherent exceptional abilities,
+PCs may gain a Starting ability at 1st level,
 an Improved ability at 4th level,
 and an Ultimate ability at 7th level.
 
@@ -510,7 +489,7 @@ Player: Sure, that's great!
 GM: Okay, cool. And your improved ability can be that you instantly
 befriend animals as large as a deer. Does that work?
 
-Player: Yes please!
+Player: Yeah!
 
 GM: Alright, and how does befriending an animal work exactly? What do
 you do to befriend them?
@@ -557,12 +536,19 @@ you have advantage.
 == Combat Addition: More Healing
 
 The following addition to the <<Healing>> rules
-might be approprite for campaigns with few magical sources of healing.
+might be appropriate for campaigns with few magical sources of healing.
 It also makes potable water an important resource.
 
 After an encounter,
 a PC that was damaged in the encounter can catch their breath for 5 minutes
 and drink fresh water to heal one Grit.
+
+== Combat Alternative: Freeform Combat
+
+GMs may wish to forego <<Turns>> and run combat conversationally,
+the same way they run the game outside of combat.
+In that case, the GM should strive to ensure that everyone at the table
+gets a chance to participate in each encounter.
 
 //== Combat Alternative: Hit Points
 //
