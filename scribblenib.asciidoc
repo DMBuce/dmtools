@@ -343,10 +343,6 @@ preferred playstyle at the table.
 Here are some I keep in my back pocket,
 ready to deploy as the need arises.
 
-//== Wild Magic
-
-//== Specialist Magic
-
 == Spellcraft
 
 [cols="1,2,2,2,2,1,1,1,1,1,1,1"]
@@ -394,7 +390,7 @@ ready to deploy as the need arises.
 | Several uncommon ingredients per casting
 | A specific time of the day or other uncommonly encountered circumstance
 | A few minutes, an incantation, and a gesticulation
-| Damage or disfiguration to a friendly group
+| Damage or disfiguration to several allies and/or passersby
 | A few hours
 | Sight
 | Field
@@ -540,6 +536,10 @@ a natural 19 on an attack roll triggers a critical strike. +
 **Ultimate Critical Strike**:
 Your critical strikes happen on a natural 19 or 20 regardless of whether or not
 you have advantage.
+
+//=== Wild Magic
+
+//=== Specialist Magic
 
 == Combat Addition: More Healing
 
