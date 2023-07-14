@@ -351,8 +351,18 @@ ready to deploy as the need arises.
 
 [cols="1,1,1,1,1,1,1,1,1,1,1,1"]
 |===
-.2+| Type 4+| Requirement 7+| Effect
-| Materials | Condition | Conveyance | Risk | Duration | Range | Area | Subjects | Weight | Force | Energy
+.2+| **Type** 4+| **Requirement** 7+| **Effect**
+| **Materials**
+| **Condition**
+| **Conveyance**
+| **Risk**
+| **Duration**
+| **Range**
+| **Area**
+| **Subjects**
+| **Weight**
+| **Force**
+| **Energy**
 
 | Cantrip
 | Source of power (wand, holy symbol, etc.)
