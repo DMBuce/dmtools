@@ -156,8 +156,8 @@ Small items such as arrows and coins can be bundled together in one slot.
 | Ultimate ability
 |===
 
-Player characters (PCs) gain levels whenever a Milestone is reached.
-The game master (GM) will determine when that is.
+Player characters gain levels whenever a Milestone is reached.
+The game master will determine when that is.
 
 = Rules Summary
 
