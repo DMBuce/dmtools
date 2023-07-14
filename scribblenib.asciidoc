@@ -22,7 +22,7 @@ toc::[]
 
 Your character (a.k.a. Player Character or PC for short)
 has a Starting ability and will gain up to two more abilities --
-an Improved ability and an Ultimate ability -
+an Improved ability and an Ultimate ability --
 as they gain experience and power while adventuring.
 
 Discuss with the gamemaster (GM) to determine your PC's abilities.
