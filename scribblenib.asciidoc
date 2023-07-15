@@ -168,14 +168,16 @@ To avoid downtime, they rejoin the group as soon as they're ready.
 
 == Healing
 
-Once per day, you or an ally can tend to your health
+Once each morning, afternoon, and night,
+you can tend to your health
 (bandage a wound, take a dose of medicine, etc.)
 to heal one Grit.
 
-Once per day,
-you can eat a meal
-and sleep for 6 hours
-to heal all Grit and one stat.
+Once each morning and afternoon,
+you can eat a meal and rest to heal one Grit.
+
+Once each night,
+you can get sleep for 6 hours to heal all Grit and one stat.
 
 //= Narrative Combat
 //
