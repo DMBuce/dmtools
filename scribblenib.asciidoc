@@ -326,94 +326,160 @@ Flies and breathes fire.
 == Milestones
 
 The GM can set milestones in whatever way they see fit.
-This is so that the rate of the players' progression
+This is so that the rate of the party's progression
 can match the desired pace of the campaign.
 Some possible ways to set milestones include:
 
-* Arbitrarily
 * At specific story beats
 * After each boss encounter
 * Whenever the party finds a treasure hoard
 * At the end of each session
 
+== Magic
+
+=== Spellbooks
+
+Each spellbook occupies a single inventory slot,
+and contains a single spell.
+Spells and spellbooks can't be copied or created.
+
+The details of each spell vary greatly,
+including how to cast them.
+Some spellbooks must be held firmly with both hands and read aloud,
+while others must simply be on your person and activated with a gesture.
+Some spells called _cantrips_ can be activated over and over,
+while others must be recharged after one or several uses.
+Spells might take a moment, a few seconds, or minutes to cast.
+They might require a source of power such as a wand or holy symbol.
+The most powerful spells, called _rituals_,
+can take hours or even days spent in concentration performing the proper
+rites using exotic materials that are consumed by the spell.
+
+Spells are fickle and unpredictable.
+If a spell instructs you to roll as part of casting it,
+rolling a natural 1 can cause damage, disfiguration,
+or have other unintended consequences.
+
+=== Spells
+
+Although spell lists from other games can be adapted for use in this one,
+the GM is encouraged to design spells improvisationally.
+One way of doing that is the three-step process outlined below.
+
+First, say **what it's called**.
+Choose a name for the spell if you have one in mind,
+or use a spell name generator such as the one from Maze Rats.
+
+Then, say **how it works** and **what it is**.
+State as concisely as possible how the player casts the spell
+and its sensory effects --
+what it looks like, sounds like, smells like, etc.
+
+Take a deliberate pause and think through next step.
+A moment's thought can help you catch undesireable consequences of your
+design,
+allowing you to quickly work a casting condition into the spell,
+make it recharge,
+give it some other limitation,
+or pivot to another design.
+
+Lastly, say **what it does**.
+Briefly outline how the spell impacts the world around it.
+In other words, make a ruling on what the effects of the spell are.
+
+Each step of the process informs the next,
+and you should say each step out loud before thinking about the next.
+The goal is to create spells on the fly, conversationally and
+improvisationally, without interrupting the flow of the game.
+
+Since you're creating the spell conversationally,
+it's okay if the effects of the spell are vague at first.
+Players will naturally ask questions about ambiguous details,
+and in answering them,
+you will create additional rulings that describe how the spell works.
+
+This method works for creating magic items and custom abilities, too.
+
+=== Magic Items
+
+A magic item is an object with a spell woven or forged into it.
+The process for designing one is largely the same as for a spell.
+
+=== Relics
+
 //== Loot
 
-= Optional Rulings
+= Optional Rules
 
-There are many possible rulings a GM could make in order to facilitate their
-preferred playstyle at the table.
-Here are some I keep in my back pocket,
-ready to deploy as the need arises.
-
-== Spellcraft
-
-[cols="1,2,2,2,2,1,1,1,1,1,1,1"]
-|===
-.2+| **Type** 4+| **Requirement** 7+| **Effect**
-| **Materials**
-| **Condition**
-| **Conveyance**
-| **Risk**
-| **Duration**
-| **Range**
-| **Area**
-| **Subjects**
-| **Weight**
-| **Force**
-| **Energy**
-
-| Cantrip
-| Source of power (wand, holy symbol, etc.)
-| None
-| A moment and a word or gesture
-| An unsuccessful roll
-| A few minutes
-| Arm's reach
-| Closet
-| One
-| Cat
-| Push
-| Candle
-
-| Minor Spell
-| One common ingredient per casting
-| Something common yet specific such as attacking or being attacked
-| A few seconds and a phrase and/or gesticulation
-| Damage or disfiguration to yourself
-| Half an hour
-| Throwing distance
-| Room
-| Several
-| Horse
-| Weapon strike
-| Bonfire
-
-| Major Spell
-| Several uncommon ingredients per casting
-| A specific time of the day or other uncommonly encountered circumstance
-| A few minutes, an incantation, and a gesticulation
-| Damage or disfiguration to several allies and/or passersby
-| A few hours
-| Sight
-| Field
-| Several dozen
-| Carriage
-| Cannonball
-| Forest fire
-
-| Ritual
-| Many exotic ingredients per casting
-| A specific phase of the moon, day of the year, or other rare occurrence
-| Hours spent in concentration performing the proper rites
-| Adventure- or campaign-spanning consequences
-| A day
-| A few hundred miles
-| City
-| Hundreds
-| Ship
-| Meteor
-| Volcano
-|===
+//== Spellcraft
+//
+//[cols="1,2,2,2,2,1,1,1,1,1,1,1"]
+//|===
+//.2+| **Type** 4+| **Requirement** 7+| **Effect**
+//| **Materials**
+//| **Condition**
+//| **Conveyance**
+//| **Risk**
+//| **Duration**
+//| **Range**
+//| **Area**
+//| **Subjects**
+//| **Weight**
+//| **Force**
+//| **Energy**
+//
+//| Cantrip
+//| Source of power (wand, holy symbol, etc.)
+//| None
+//| A moment and a word or gesture
+//| An unsuccessful roll
+//| A few minutes
+//| Arm's reach
+//| Closet
+//| One
+//| Cat
+//| Push
+//| Candle
+//
+//| Minor Spell
+//| One common ingredient per casting
+//| Something common yet specific such as attacking or being attacked
+//| A few seconds and a phrase and/or gesticulation
+//| Damage or disfiguration to yourself
+//| Half an hour
+//| Throwing distance
+//| Room
+//| Several
+//| Horse
+//| Weapon strike
+//| Bonfire
+//
+//| Major Spell
+//| Several uncommon ingredients per casting
+//| A specific time of the day or other uncommonly encountered circumstance
+//| A few minutes, an incantation, and a gesticulation
+//| Damage or disfiguration to several allies and/or passersby
+//| A few hours
+//| Sight
+//| Field
+//| Several dozen
+//| Carriage
+//| Cannonball
+//| Forest fire
+//
+//| Ritual
+//| Many exotic ingredients per casting
+//| A specific phase of the moon, day of the year, or other rare occurrence
+//| Hours spent in concentration performing the proper rites
+//| Adventure- or campaign-spanning consequences
+//| A day
+//| A few hundred miles
+//| City
+//| Hundreds
+//| Ship
+//| Meteor
+//| Volcano
+//|===
 
 //spell systems
 //--
@@ -446,8 +512,6 @@ ready to deploy as the need arises.
 //focus: holy symbol
 //need separate good/holy/nature tables?
 
-//== Character Creation: Heirlooms & Legacies
-
 == Character Creation: Additional Training
 
 If the setting and campaign support it,
@@ -479,8 +543,8 @@ Here is an example of how such a discussion might go:
 
 [quote]
 ----
-GM: Okay, first we need to figure out an ability for your
-character. What's the one special thing that they're good at?
+GM: Okay, let's figure out an ability for your character. What's the
+one special thing that they're good at?
 
 Player: I want my character to be able to befriend any animal.
 
@@ -527,23 +591,38 @@ You add another 1d6 to attack rolls and another +1 damage against surprised
 enemies.
 
 **Critical Strike**:
-You deal massive damage on a critical strike,
-which is a natural 20 on an attack roll.
-After rolling a critical strike,
+You deal massive damage on a critical strike.
+After rolling a natural 20 on an attack roll,
 you roll another attack roll and deal damage if it hits.
 If the attack roll is a critical strike, the process repeats. +
 **Improved Critical Strike**:
-When you have advantage,
-a natural 19 on an attack roll triggers a critical strike. +
+When you have advantage on an attack roll,
+a natural 19 triggers a critical strike in addition to a natural 20. +
 **Ultimate Critical Strike**:
-Your critical strikes happen on a natural 19 or 20 regardless of whether or not
-you have advantage.
+A natural 19 on an attack roll is a critical strike
+regardless of whether or not you have advantage.
 
-//=== Wild Magic
+//=== Custom Ability Variants: Magic Systems
 
-//=== Specialist Magic
+//Magic is fickle, mysterious, and dangerous.
 
-== Combat Addition: More Healing
+//Wild Magic
+
+//Specialist Magic
+
+//Domain Magic
+
+//Artifice & Spellcraft
+
+//=== Custom Ability Variants: Milestone Abilities
+
+//=== Custom Ability Variant: Legacies
+
+//== Endgame Play: Additional Levels
+
+//== Endgame Play: Retirement & Heirlooms
+
+== Combat: More Healing
 
 The following addition to the <<Healing>> rules
 might be appropriate for campaigns with few magical sources of healing.
@@ -553,14 +632,14 @@ After an encounter,
 a PC that was damaged in the encounter can catch their breath for 5 minutes
 and drink fresh water to heal one Grit.
 
-== Combat Alternative: Freeform Combat
+== Combat: Freeform Combat
 
 GMs may wish to forego <<Turns>> and run combat conversationally,
-the same way they run the game outside of combat.
+the same way the game is run outside of combat.
 In that case, the GM should strive to ensure that everyone at the table
 gets a chance to participate in each encounter.
 
-//== Combat Alternative: Hit Points
+//== Combat: Hit Points
 //
 //The following are alternative rules for combat
 //based on health and damage dice instead of Grit and stat damage.
@@ -640,7 +719,7 @@ gets a chance to participate in each encounter.
 //Grit is healed with a Short Rest.
 //
 //Enemies and monsters don't have Health or Hit Points.
-//Instead, they have limbs, 
+//Instead, they have limbs,
 //
 //Savage Worlds: Shaken > Wounded x4
 //
