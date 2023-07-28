@@ -3,8 +3,6 @@
 // * characters: all (pg 5, 6)
 // * characters: clothing (pg 6)
 // * characters: after the party (pg 6)
-// * the maze: dungeon entrances (pg 10)
-// * the maze: dungeon layout (pg 10)
 
 var maintable = [
 	"{{npc}}",
@@ -28,6 +26,61 @@ var mazerat_thing = [
 	"{{monster}}",
 	//"{{character}}",
 	"{{treasure}}",
+]
+
+// HEX THINGS
+var region_table = [
+	"{{region_adjective}} {{wilderness_region}}",
+	"{{region_adjective}} {{wilderness_region}} {{region_modifier}}",
+	//"{{region_adjective}} {{wilderness_region}} with {{prominent_feature}}",
+	//prominent feature = dungeon, landmark, town?
+]
+var feature_table = [
+	"{{any_adjective}} {{wilderness_landmark}}",
+	"{{region_adjective}} {{wilderness_landmark}} {{region_modifier}}",
+	"{{wilderness_structure}} and {{wilderness_discovery}}",
+	"{{dungeon_entrance}}",
+	"{{dungeon}}",
+	"lair of the {{monster}}",
+	"shrine of {{spell}}",
+]
+var encounter_table = [
+	"{{monster}}",
+	"{{wilderness_structure}} and {{wilderness_discovery}}",
+	"{{wilderness_npc}}",
+	"{{thing}}",
+]
+var forage_table = [
+	"{{edible_plant}} and {{edible_plant}}",
+	"{{edible_plant}} and {{edible_plant}}",
+	"{{edible_plant}}",
+	"{{edible_plant}}",
+	"{{edible_plant}}",
+	"berry of {{spell}}",
+	"toxic {{poisonous_plant}}",
+]
+
+var region_adjective = [
+	"{{element}}",
+	"{{faction_trait}}",
+	"{{wilderness_region_trait}}",
+	"{{inn_adjective}}",
+]
+var region_modifier = [
+	"with {{monster_feature}}",
+	"of {{book_subject}}",
+	"with {{wilderness_landmark}}",
+	"{{dungeon_trick}}",
+]
+var dungeon = [
+	"{{dungeon_layout}}",
+	"{{dungeon_layout}} of {{dungeon_ruination}}",
+]
+
+var wilderness_npc = [
+	"{{dude_adjective}} {{fullname}} {{wilderness_npc_title}}",
+	"{{fullname}} {{wilderness_npc_title}}",
+	"{{npc}}",
 ]
 
 // SPELLS
@@ -84,6 +137,7 @@ var monster_modifier = [
 	"with {{monster_feature}}",
 	"{{monster_weakness}}",
 	"{{monster_tactic}}",
+	"{{wilderness_activity}}",
 ]
 
 // TREASURE & EQUIPMENT
@@ -1362,7 +1416,7 @@ var faction = [
 
 var wilderness_region = [
 	// the wild: wilderness regions
-	"ashy",
+	//"ashy",
 	"badlands",
 	"bay",
 	"beach",
@@ -1388,14 +1442,14 @@ var wilderness_region = [
 	"petrified forest",
 	"plains",
 	"rainforest",
-	"ricerlands",
+	"riverlands",
 	"salt pan",
 	"savanna",
 	"steppe",
 	"taiga",
 	"thickets",
 	"tundra",
-	"volvanic plain",
+	"volcanic plain",
 	"wetlands",
 	"woodlands",
 ]
@@ -1640,6 +1694,46 @@ var inn_noun = [
 	"wife",
 ]
 
+var dungeon_entrance = [
+	// the maze: dungeon entrances
+	//"all libraries",
+	"beaver dam with a {{dungeon_form}} inside",
+	"{{dungeon_form}} entrance hidden behind waterfall",
+	"chalk rectangle that teleports people to {{dungeon_form}}",
+	"chest that's the entrance to {{dungeon_form}}",
+	"chimney of a {{dungeon_form}}",
+	"cupboard that's the entrance to {{dungeon_form}}",
+	"dolmen with {{dungeon_form}} under it",
+	"{{dungeon_form}} down a well",
+	"fiery pit that sends burned things to {{dungeon_form}}",
+	"fog road leading to {{dungeon_form}}",
+	"forest spring that hides a {{dungeon_form}}",
+	"giant book with {{dungeon_form}} dungeon in it",
+	"gypsy wagon with {{dungeon_form}} inside",
+	"hollow tree leads down into {{dungeon_form}}",
+	"huge keyhole with {{dungeon_form}} on the other side",
+	"iron maiden that's the entrance to {{dungeon_form}}",
+	"living tattoo with {{dungeon_form}} dungeon in it",
+	"magic painting with {{dungeon_form}} dungeon in it",
+	"man-shaped hole leads to {{dungeon_form}}",
+	"maze potion",
+	"mirror with {{dungeon_form}} dungeon in it",
+	"monster mouth that leads to {{dungeon_form}}",
+	"monster wound with {{dungeon_form}} dungeon in it",
+	"narrow alley with {{dungeon_form}} at the end of it",
+	//"raid door",
+	"{{dungeon_form}} down a sewer grate",
+	"sudden rift leads to {{dungeon_form}}",
+	"tidal cave with {{dungeon_form}} in it",
+	"{{dungeon_form}} in a tower",
+	"tree roots grasping {{dungeon_form}}",
+	"{{dungeon_form}} under the bed",
+	"unfolded map leads to {{dungeon_form}}",
+	"{{dungeon_form}} up a tree",
+	"whirlpool sucks victims into {{dungeon_form}}",
+	"{{dungeon_form}} at the bottom of a wine barrel",
+]
+
 var dungeon_form = [
 	// the maze: dungeon forms
 	"arena",
@@ -1678,6 +1772,46 @@ var dungeon_form = [
 	"university",
 	"vault",
 	"zoo",
+]
+
+var dungeon_layout = [
+	// the maze: dungeon layout
+	"ant colony {{dungeon_form}}",
+	"{{dungeon_form}} with a central hub",
+	"claustrophobic {{dungeon_form}}",
+	"crisscrossing {{dungeon_form}}",
+	"curved {{dungeon_form}}",
+	"disorienting {{dungeon_form}}",
+	"{{dungeon_form}} galleria",
+	"geometric {{dungeon_form}}",
+	"gonzo {{dungeon_form}}",
+	"haphazard {{dungeon_form}}",
+	"highly regular {{dungeon_form}}",
+	"honeycomb {{dungeon_form}}",
+	"intertwined {{dungeon_form}}",
+	"{{dungeon_form}} with isolated wings",
+	"layered {{dungeon_form}}",
+	"linear {{dungeon_form}}",
+	"looping {{dungeon_form}}",
+	"{{dungeon_form}} with many corridors",
+	"mazelike {{dungeon_form}}",
+	"{{dungeon_form}} with a mix of layouts",
+	"{{dungeon_form}} with multiple hubs",
+	"{{dungeon_form}} with no corridors",
+	"open plan {{dungeon_form}}",
+	"{{dungeon_form}} with open voids",
+	"organic {{dungeon_form}}",
+	"oversized {{dungeon_form}}",
+	"recursive {{dungeon_form}}",
+	"repetitive {{dungeon_form}}",
+	"sprawling {{dungeon_form}}",
+	"suspended {{dungeon_form}}",
+	"symbol shaped {{dungeon_form}}",
+	"tall and narrow {{dungeon_form}}",
+	"{{dungeon_form}} with themed zones",
+	"vertical {{dungeon_form}}",
+	"winding {{dungeon_form}}",
+	"ziggurat {{dungeon_form}}",
 ]
 
 var dungeon_ruination = [
@@ -2155,7 +2289,7 @@ var wilderness_landmark = [
 	"rockslide",
 	"spring",
 	"swamp",
-	"thickets",
+	"thicket",
 	"valley",
 	"waterfall"
 ]
@@ -2201,8 +2335,8 @@ var mutation = [
 	"with long arms",
 	"of hair loss",
 	"of tooth loss",
-	"with {{monster feature}}",
-	"that's {{monster trait}}",
+	"with {{monster_feature}}",
+	"that's {{monster_trait}}",
 	"with no eyes",
 	"with no mouth",
 	"with {{physical_element}} skin",
@@ -3461,9 +3595,9 @@ var npc_title = [
 	"the {{reputation}}",
 	//"the {{hobby}}",
 	"the {{relationship}}",
-	"{{civilized_npc}}",
-	"{{underworld_npc}}",
-	"{{wilderness_npc}}",
+	"{{civilized_npc_title}}",
+	"{{underworld_npc_title}}",
+	"{{wilderness_npc_title}}",
 	"{{mannerism}}",
 	"{{divine_domain}}",
 ]
@@ -3759,7 +3893,7 @@ var dude_adjective = [
 
 //// NPC MODIFIERS
 
-var civilized_npc = [
+var civilized_npc_title = [
 	// characters: civilized dudes
 	"the acolyte",
 	"the actor",
@@ -3799,7 +3933,7 @@ var civilized_npc = [
 	"the wingmaker",
 ]
 
-var underworld_npc = [
+var underworld_npc_title = [
 	// characters: underworld dudes
 	"the alchemist",
 	"the beggar-prince",
@@ -3839,7 +3973,7 @@ var underworld_npc = [
 	"the usurer",
 ]
 
-var wilderness_npc = [
+var wilderness_npc_title = [
 	// characters: wilderness dudes
 	"the apiarist",
 	"the bandit",
@@ -4200,9 +4334,9 @@ var divine_domain = [
 ]
 
 var dude_modifier = [
-	"{{civilized_npc}}",
-	"{{underworld_npc}}",
-	"{{wilderness_npc}}",
+	"{{civilized_npc_title}}",
+	"{{underworld_npc_title}}",
+	"{{wilderness_npc_title}}",
 	"{{asset}}",
 	"{{liability}}",
 	"{{npc_goal}}",
@@ -4255,15 +4389,6 @@ function expand(string, i) {
 	}
 }
 
-function thinggen() {
-	if (querystring.thing) {
-		table = "{{" + querystring.thing + "}}";
-	} else {
-		table = "{{maintable}}";
-	}
-	return expand(table, 0) + "<br/>";
-}
-
 function parsequery() {
 	// This function is anonymous, is executed immediately and 
 	// the return value is assigned to QueryString!
@@ -4287,6 +4412,16 @@ function parsequery() {
 	return query_string;
 }
 
+function thinggen() {
+	if (querystring.thing) {
+		table = "{{" + querystring.thing + "}}";
+	} else {
+		table = "{{maintable}}";
+	}
+	return expand(table, 0) + "<br/>";
+}
+
+// thinggen
 var querystring = null;
 function main() {
 	querystring = parsequery();
@@ -4295,6 +4430,34 @@ function main() {
 	for(var i = 0; i < things.length; i++) {
 		console.log("===");
 		things.item(i).innerHTML=thinggen();
+	}
+}
+
+function hex() {
+	querystring = parsequery();
+
+	var things = document.getElementsByClassName("terrain");
+	for(var i = 0; i < things.length; i++) {
+		console.log("===");
+		things.item(i).innerHTML=expand("{{region_table}}", 0);
+	}
+
+	things = document.getElementsByClassName("feature");
+	for(var i = 0; i < things.length; i++) {
+		console.log("===");
+		things.item(i).innerHTML=expand("{{feature_table}}", 0);
+	}
+
+	things = document.getElementsByClassName("encounter");
+	for(var i = 0; i < things.length; i++) {
+		console.log("===");
+		things.item(i).innerHTML=expand("{{encounter_table}}", 0);
+	}
+
+	things = document.getElementsByClassName("forage");
+	for(var i = 0; i < things.length; i++) {
+		console.log("===");
+		things.item(i).innerHTML=expand("{{forage_table}}", 0);
 	}
 }
 
