@@ -7,6 +7,20 @@
 <script src="thinggen.js"></script>
 </head>
 <body class="generator">
+	<nav>
+		<ul>
+			<li>
+				<a href='thinggen.html'>ThingGen</a>
+			</li>
+			<li>
+				<a href='hexgen.html'>HexGen</a>
+			</li>
+			<li>
+				<a href='language.html'>LangTrans</a>
+			</li>
+		</ul>
+	</nav>
+
 	<span class="spacer"><br/></span>
 	<button onclick="hex()" autofocus>Generate Wilderness</button>
 	<table width=70% style="margin: 0px auto;">
@@ -21,6 +35,10 @@
 		<tr>
 			<td class="thing">Encounter:&nbsp;</td>
 			<td class="subthing encounter"></td>
+		</tr>
+		<tr>
+			<td class="thing">Wilderness:&nbsp;</td>
+			<td class="subthing wilderness"></td>
 		</tr>
 		<tr>
 			<td class="thing">Forage:&nbsp;</td>

@@ -28,7 +28,7 @@ ul {
 	font-size: 30pt;
 	font-family: Arial, sans-serif;
 	color: black;
-	padding: 1em;
+	/*padding: 1em;*/
 	line-height: 1.5em;
 }
 
@@ -57,4 +57,36 @@ td.thing {
 textarea {
 	font-size: 12pt;
 }
+
+nav > ul {
+    margin-left: 0;
+    text-align: center;
+    color: #BF4040;
+	list-style: none;
+}
+
+nav > ul li {
+    display: inline;
+}
+
+nav > ul li p {
+    display: inline;
+}
+
+nav > ul li:first-child:before {
+    content: "[";
+}
+
+nav > ul li:before {
+    content: "|";
+}
+
+nav > ul li:last-child:after {
+    content: "]";
+}
+
+nav a:link    { text-decoration: none; }
+nav a:visited { text-decoration: none; }
+nav a:hover   { text-decoration: underline; }
+nav a:active  { text-decoration: underline; }
 
