@@ -1,3 +1,9 @@
+// CC-BY 4.0
+// https://creativecommons.org/licenses/by/4.0/
+//
+// Based on Maze Rats tables
+// https://www.drivethrurpg.com/product/197158/Maze-Rats
+
 // unused maze rats tables
 // * magic: omens/magical catasrophes (pg 3)
 // * characters: all (pg 5, 6)
